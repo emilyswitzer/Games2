@@ -56,11 +56,24 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PlayerController.cs" />
-    <Compile Include="Assets\Generator.cs" />
-    <Compile Include="Assets\Obstacle.cs" />
-    <Compile Include="Assets\MenuController.cs" />
-    <Compile Include="Assets\Scrollingbg.cs" />
+    <Compile Include="Assets\Scripts\Scrollingbg.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Generator.cs" />
+    <Compile Include="Assets\Scripts\Obstacle.cs" />
+    <Compile Include="Assets\Scripts\MenuController.cs" />
+    <Compile Include="Assets\Scripts\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\NameInput.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds_version-7.0.0_manifest.txt" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Common.dll" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.dll" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.iOS.dll" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Core.dll" />
+    <None Include="Assets\GoogleMobileAds\link.xml" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Unity.dll" />
+    <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Android.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -275,6 +288,18 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Unity">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Core">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Common">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Common.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -734,6 +759,10 @@
     <ProjectReference Include="Unity.2D.SpriteShape.Editor.csproj">
       <Project>{FFFB8710-4ABB-0CA2-ACEA-422F849CD10D}</Project>
       <Name>Unity.2D.SpriteShape.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="GoogleMobileAds.Editor.csproj">
+      <Project>{A24A2157-33D2-55DD-4440-9F49A194A724}</Project>
+      <Name>GoogleMobileAds.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Editor.csproj">
       <Project>{AB63FDA9-D529-7E1F-9291-3B2C9847D5C2}</Project>
