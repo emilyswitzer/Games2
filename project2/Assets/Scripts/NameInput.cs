@@ -1,18 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class NameInput : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+using System;
+    [Serializable]
+    public class NameInput
     {
-        
+        public string entryName;
+        public int entryScore;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
+   
