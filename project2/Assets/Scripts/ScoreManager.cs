@@ -41,7 +41,10 @@ public class ScoreManager : MonoBehaviour
         
     }
 
-   
+   public string getScore()
+    {
+        return currenthighscore.ToString();
+    }
    
 
 }
