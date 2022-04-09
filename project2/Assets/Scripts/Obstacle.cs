@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 public class Obstacle : MonoBehaviour
 {
     Color[] colours = new Color[5];
-    GameManager g;
+    
+    
     private void Start()
     {
+        
 
         colours[0] = new Color(248f/255f, 233f/255f, 161f / 255f);
         colours[1] = new Color(247 / 255f, 108 / 255f, 108 / 255f);
@@ -30,8 +32,7 @@ public class Obstacle : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            g.gameOver();
-          //  SceneManager.LoadScene("Game");
+            SceneManager.LoadScene("DeathScreen");
 
         }
         if (collision.gameObject.CompareTag("Finish"))

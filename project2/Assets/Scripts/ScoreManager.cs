@@ -12,12 +12,9 @@ public class ScoreManager : MonoBehaviour
     public float currenthighscore;
     public bool increaseScore;
     public float points;
-    public GameObject c;
-    public GameManager g;
     // Start is called before the first frame update
     void Start()
     {
-        c.SetActive(false);
         currenthighscore = PlayerPrefs.GetFloat("HighScore", 0f);
         increaseScore = true;
         points = 1f;
@@ -34,9 +31,9 @@ public class ScoreManager : MonoBehaviour
         if (currentscore > currenthighscore)
         {
             currenthighscore = currentscore;
-            addHighScore();
+       
             PlayerPrefs.SetFloat("HighScore", currenthighscore);
-
+           
 
         }
         score.text = "Score: " + Mathf.Round(currentscore);
@@ -44,12 +41,7 @@ public class ScoreManager : MonoBehaviour
         
     }
 
-    private void addHighScore()
-    {
-        g.GetHighScore(currenthighscore);
-       
-    }
-
+   
    
 
 }

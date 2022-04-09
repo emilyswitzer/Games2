@@ -415,6 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87931d163034db84ba9353b5b7daa059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tsm: {fileID: 0}
 --- !u!1 &1063672763
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,7 +862,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 798534662}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: leaderboard
+        m_MethodName: Leaderboard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1073,7 +1074,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 798534662}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: playGame
+        m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
