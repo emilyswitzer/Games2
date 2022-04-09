@@ -5,18 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-    private ScoreManager tsm;
+    public ScoreManager tsm;
+
     private void Start()
     {
-        tsm = GetComponent<ScoreManager>();
-        tsm.increaseScore = false;
     }
-    public void playGame()
+    public void PlayGame()
     {
+
         SceneManager.LoadScene("Game");
     }
 
-    public void leaderboard()
+    public void GameOver()
+    {
+
+    }
+
+    public void RestartGame() {
+
+        PlayGame();
+
+    }
+    public void Leaderboard()
     {
 
     }
