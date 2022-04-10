@@ -11,14 +11,26 @@ public class LosingMenuController : MonoBehaviour
 
     private void Start()
     {
+        AdManager.instance.RequestInterstitial();
         currenthighscore = PlayerPrefs.GetFloat("HighScore", 0f);
         highscore.text = "Highscore: " + Mathf.Round(currenthighscore);
+      
+        
+
+    }
+
+    private void Update()
+    {
+        if (Random.Range(0, 3) == 0)
+        {
+            AdManager.instance.ShowInterstitial();
+        }
     }
 
 
     public void RestartGame()
     {
-        print("HELLO");
+      
         SceneManager.LoadScene("Game");
     }
 

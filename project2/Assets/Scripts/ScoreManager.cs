@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,13 +12,18 @@ public class ScoreManager : MonoBehaviour
     public float currenthighscore;
     public bool increaseScore;
     public float points;
+    
     // Start is called before the first frame update
+
+    
     void Start()
     {
+      
+
         currenthighscore = PlayerPrefs.GetFloat("HighScore", 0f);
         increaseScore = true;
         points = 1f;
-
+        
     }
 
     // Update is called once per frame
@@ -41,10 +46,12 @@ public class ScoreManager : MonoBehaviour
         
     }
 
-   public string getScore()
+    
+
+    public float getHighScore()
     {
-        return currenthighscore.ToString();
+        return currenthighscore;
     }
-   
+
 
 }

@@ -9,6 +9,8 @@ public class MenuController : MonoBehaviour
 
     private void Start()
     {
+        AdManager.instance.RequestRewardAd();
+
     }
     public void PlayGame()
     {
@@ -19,6 +21,13 @@ public class MenuController : MonoBehaviour
     public void GameOver()
     {
 
+    }
+
+    public void click()
+    {
+       
+            AdManager.instance.ShowRequestRewardAd();
+        
     }
 
     public void RestartGame() {
