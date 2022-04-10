@@ -334,8 +334,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 045ed9bc5eb3bdc4c977bbe7e1674dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 1737680289}
-  input: {fileID: 1206770468}
+  usernameInput: {fileID: 1206770468}
+  text: {fileID: 1942887501}
 --- !u!114 &524393708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -570,8 +570,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 524393707}
         m_TargetAssemblyTypeName: StartScript, Assembly-CSharp
-        m_MethodName: SaveData
-        m_Mode: 1
+        m_MethodName: SaveName
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -729,7 +729,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 59.968, y: 76.353}
+  m_AnchoredPosition: {x: 54, y: 75}
   m_SizeDelta: {x: 378.1297, y: 103.6188}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1737680289
@@ -765,7 +765,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: BOXJUMP
 --- !u!222 &1737680290
 CanvasRenderer:
   m_ObjectHideFlags: 0

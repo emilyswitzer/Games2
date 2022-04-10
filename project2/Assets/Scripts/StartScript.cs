@@ -6,30 +6,35 @@ using UnityEngine.UI;
 
 public class StartScript : MonoBehaviour
 {
-    public Text nameText;
-    public InputField input; 
-    
+    public InputField usernameInput;
+    public static string username = "vv";
+    public Text text;
     void Start()
     {
-        nameText.text = PlayerPrefs.GetString("username");
+        if (username != "")
+            usernameInput.text = username;
     }
 
-    public void SaveData()
+    public void SaveName(string newName)
     {
-        nameText.text = input.text;
-        PlayerPrefs.SetString("username", nameText.text);
-        PlayerPrefs.Save();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        username = newName;
+        PlayerPrefs.SetString("username", username);
         
+
+
     }
+
 
     public void PlayGame()
     {
-       
+        
         SceneManager.LoadScene("Menu");
     }
+
+    public string getUser()
+    {
+        return username;
+    }
+
+    
 }

@@ -57,18 +57,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
-    <Compile Include="Assets\Scripts\UserInputController.cs" />
     <Compile Include="Assets\Scripts\Scrollingbg.cs" />
-    <Compile Include="Assets\Scripts\NameInput.cs" />
+    <Compile Include="Assets\Scripts\Leaderboard.cs" />
+    <Compile Include="Assets\Scripts\RowUI.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Generator.cs" />
     <Compile Include="Assets\Scripts\StartScript.cs" />
+    <Compile Include="Assets\Scripts\InputEntry.cs" />
     <Compile Include="Assets\Scripts\Obstacle.cs" />
     <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\LosingMenuController.cs" />
-    <Compile Include="Assets\Scripts\Leaderboard.cs" />
-    <Compile Include="Assets\Scripts\LeaderboardEntry.cs" />
-    <Compile Include="Assets\Scripts\LeaderboardList.cs" />
+    <Compile Include="Assets\Scripts\FileHandler.cs" />
+    <Compile Include="Assets\Scripts\AdManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds_version-7.0.0_manifest.txt" />
