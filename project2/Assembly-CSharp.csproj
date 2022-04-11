@@ -56,22 +56,31 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\SmokeTest\Scripts\AssemblyInfo.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
+    <Compile Include="Assets\SmokeTest\Scripts\FriendsGUI.cs" />
+    <Compile Include="Assets\SmokeTest\Scripts\LeaderboardGUI.cs" />
     <Compile Include="Assets\Scripts\Scrollingbg.cs" />
+    <Compile Include="Assets\SmokeTest\Scripts\MainGui.cs" />
     <Compile Include="Assets\Scripts\Leaderboard.cs" />
     <Compile Include="Assets\Scripts\RowUI.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Generator.cs" />
+    <Compile Include="Assets\SmokeTest\GPGSIds.cs" />
     <Compile Include="Assets\Scripts\StartScript.cs" />
+    <Compile Include="Assets\SmokeTest\Scripts\AchievementGUI.cs" />
     <Compile Include="Assets\Scripts\InputEntry.cs" />
+    <Compile Include="Assets\Scripts\FileHandler.cs" />
     <Compile Include="Assets\Scripts\Obstacle.cs" />
+    <Compile Include="Assets\Scripts\AdManager.cs" />
     <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\LosingMenuController.cs" />
-    <Compile Include="Assets\Scripts\FileHandler.cs" />
-    <Compile Include="Assets\Scripts\AdManager.cs" />
+    <Compile Include="Assets\SmokeTest\Scripts\NearbyGUI.cs" />
+    <Compile Include="Assets\Scripts\GPGSManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds_version-7.0.0_manifest.txt" />
+    <None Include="Assets\GooglePlayGames\com.google.play.games\Proguard\games.txt" />
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds.Common.dll" />
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds.dll" />
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds.iOS.dll" />
@@ -753,6 +762,10 @@
       <Project>{4634DD48-51A9-85FD-DD23-BACB3C5E750E}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Google.Play.Games.Editor.csproj">
+      <Project>{CC0F9605-D79E-E6DD-6DF8-404C55FB7942}</Project>
+      <Name>Google.Play.Games.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.Editor.csproj">
       <Project>{DA368E3D-CA82-172C-17D2-AF5DAF5275A9}</Project>
       <Name>Unity.Mathematics.Editor</Name>
@@ -772,6 +785,10 @@
     <ProjectReference Include="Unity.2D.Common.Editor.csproj">
       <Project>{AB63FDA9-D529-7E1F-9291-3B2C9847D5C2}</Project>
       <Name>Unity.2D.Common.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Google.Play.Games.csproj">
+      <Project>{62B2266A-1811-98D2-9D33-35E21F745287}</Project>
+      <Name>Google.Play.Games</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
       <Project>{181BFDC8-57B4-4372-007B-E06FD9A78026}</Project>
