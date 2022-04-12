@@ -38,7 +38,9 @@ public class ScoreManager : MonoBehaviour
             currenthighscore = currentscore;
        
             PlayerPrefs.SetFloat("HighScore", currenthighscore);
-           
+            Achievements.instance.GrantAchievement("CgkIiqeWk7cJEAIQAw");
+
+            
 
         }
         score.text = "Score: " + Mathf.Round(currentscore);

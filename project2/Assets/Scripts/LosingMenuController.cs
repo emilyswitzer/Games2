@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using GooglePlayGames;
+using UnityEngine.SocialPlatforms;
 
 public class LosingMenuController : MonoBehaviour
 {
@@ -14,8 +16,19 @@ public class LosingMenuController : MonoBehaviour
         AdManager.instance.RequestInterstitial();
         currenthighscore = PlayerPrefs.GetFloat("HighScore", 0f);
         highscore.text = "Highscore: " + Mathf.Round(currenthighscore);
-      
-        
+
+
+        Achievements.instance.GrantAchievement("CgkIiqeWk7cJEAIQAQ");
+        Social.ReportScore((long)currenthighscore, "CgkIiqeWk7cJEAIQBQ", (bool success) => {
+            if (success)
+            {
+                Debug.Log("Success");
+            }
+            else
+            {
+                Debug.Log("Not successful");
+            }
+        });
 
     }
 
@@ -31,7 +44,7 @@ public class LosingMenuController : MonoBehaviour
     public void RestartGame()
     {
       
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("GameScene");
     }
 
     public void QuitToMain()

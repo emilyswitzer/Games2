@@ -15,7 +15,7 @@ public class MenuController : MonoBehaviour
     public void PlayGame()
     {
 
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("GameScene");
     }
 
     public void GameOver()

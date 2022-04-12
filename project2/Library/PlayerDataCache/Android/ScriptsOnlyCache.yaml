@@ -1,7 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Achievements
     - AdManager
+    - GPGSManager
     - Generator
     - Leaderboard
     - LosingMenuController
@@ -10,15 +12,16 @@ ScriptsOnlyBuild:
     - PlayerController
     - ScoreManager
     - Scrollingbg
-    - StartScript
     GoogleMobileAds.Common.dll:
     - GoogleMobileAds.Common.MobileAdsEventExecutor
     GoogleMobileAds.Editor.dll:
     - GoogleMobileAds.Editor.GoogleMobileAdsSettings
+    - GoogleMobileAds.Editor.GoogleMobileAdsSettingsEditor
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -40,7 +43,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
-    - UnityEngine.UI.InputField
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
@@ -62,21 +64,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1582}
+      Script: {instanceID: 1594}
     - Class: 114
-      Script: {instanceID: 2414}
+      Script: {instanceID: 2454}
     - Class: 114
-      Script: {instanceID: 2860}
+      Script: {instanceID: 2918}
     - Class: 114
-      Script: {instanceID: 3044}
+      Script: {instanceID: 3102}
     - Class: 114
-      Script: {instanceID: 3290}
+      Script: {instanceID: 3358}
     - Class: 114
-      Script: {instanceID: 3550}
+      Script: {instanceID: 3628}
     - Class: 114
-      Script: {instanceID: 3672}
+      Script: {instanceID: 3754}
     - Class: 114
-      Script: {instanceID: 5350}
+      Script: {instanceID: 5492}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -93,7 +95,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Game.unity:
+    Assets/Scenes/GameScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -116,6 +118,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
@@ -125,31 +129,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1654}
+      Script: {instanceID: 1666}
     - Class: 114
-      Script: {instanceID: 2122}
+      Script: {instanceID: 2092}
     - Class: 114
-      Script: {instanceID: 2414}
+      Script: {instanceID: 2148}
     - Class: 114
-      Script: {instanceID: 2494}
+      Script: {instanceID: 2454}
     - Class: 114
-      Script: {instanceID: 2860}
+      Script: {instanceID: 2536}
     - Class: 114
-      Script: {instanceID: 3044}
+      Script: {instanceID: 2918}
     - Class: 114
-      Script: {instanceID: 3266}
+      Script: {instanceID: 3102}
     - Class: 114
-      Script: {instanceID: 3290}
+      Script: {instanceID: 3334}
     - Class: 114
-      Script: {instanceID: 3410}
+      Script: {instanceID: 3358}
     - Class: 114
-      Script: {instanceID: 3550}
+      Script: {instanceID: 3482}
     - Class: 114
-      Script: {instanceID: 4846}
+      Script: {instanceID: 3628}
     - Class: 114
-      Script: {instanceID: 4984}
+      Script: {instanceID: 4106}
     - Class: 114
-      Script: {instanceID: 5214}
+      Script: {instanceID: 4972}
+    - Class: 114
+      Script: {instanceID: 5116}
+    - Class: 114
+      Script: {instanceID: 5348}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -186,23 +194,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1582}
+      Script: {instanceID: 1594}
     - Class: 114
-      Script: {instanceID: 2414}
+      Script: {instanceID: 2454}
     - Class: 114
-      Script: {instanceID: 2860}
+      Script: {instanceID: 2918}
     - Class: 114
-      Script: {instanceID: 2906}
+      Script: {instanceID: 2964}
     - Class: 114
-      Script: {instanceID: 3044}
+      Script: {instanceID: 3102}
     - Class: 114
-      Script: {instanceID: 3290}
+      Script: {instanceID: 3358}
     - Class: 114
-      Script: {instanceID: 3550}
+      Script: {instanceID: 3628}
     - Class: 114
-      Script: {instanceID: 3672}
+      Script: {instanceID: 3754}
     - Class: 114
-      Script: {instanceID: 4092}
+      Script: {instanceID: 4186}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -237,74 +245,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1582}
+      Script: {instanceID: 1594}
     - Class: 114
-      Script: {instanceID: 2414}
+      Script: {instanceID: 2454}
     - Class: 114
-      Script: {instanceID: 2860}
+      Script: {instanceID: 2918}
     - Class: 114
-      Script: {instanceID: 3044}
+      Script: {instanceID: 3102}
     - Class: 114
-      Script: {instanceID: 3290}
+      Script: {instanceID: 3358}
     - Class: 114
-      Script: {instanceID: 3550}
+      Script: {instanceID: 3628}
     - Class: 114
-      Script: {instanceID: 3672}
+      Script: {instanceID: 3754}
     - Class: 114
-      Script: {instanceID: 4984}
+      Script: {instanceID: 5116}
     - Class: 114
-      Script: {instanceID: 5214}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/StartGame.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1582}
-    - Class: 114
-      Script: {instanceID: 2414}
-    - Class: 114
-      Script: {instanceID: 2860}
-    - Class: 114
-      Script: {instanceID: 3044}
-    - Class: 114
-      Script: {instanceID: 3290}
-    - Class: 114
-      Script: {instanceID: 3348}
-    - Class: 114
-      Script: {instanceID: 3550}
-    - Class: 114
-      Script: {instanceID: 3672}
-    - Class: 114
-      Script: {instanceID: 4160}
+      Script: {instanceID: 5348}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -408,16 +365,40 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Google.Play.Games.dll
+    namespaceName: GooglePlayGames.OurUtils
+    className: NearbyHelperObject
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Achievements
+  - hash:
+      serializedVersion: 2
       Hash: 61086280482134195efa6e4402a17f4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScoreManager
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SmokeTest
+    className: FriendsGUI
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SmokeTest
+    className: LeaderboardGUI
   - hash:
       serializedVersion: 2
       Hash: 800c50acba124432abb4cf0d47202e06
@@ -448,6 +429,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.PixelPerfect.dll
     namespaceName: UnityEngine.U2D
     className: CinemachinePixelPerfect
+  - hash:
+      serializedVersion: 2
+      Hash: 018fa8883c4b113806fb240efefc68d7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SmokeTest
+    className: MainGui
   - hash:
       serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
@@ -642,6 +629,12 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+      Hash: 0f3c29fef77e53c29975fdadd2e5995a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GPGSManager
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -670,6 +663,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SmokeTest
+    className: AchievementGUI
   - hash:
       serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
@@ -760,6 +759,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.SpriteShape.Runtime.dll
     namespaceName: 
     className: SpriteShapeGeometryCache
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Google.Play.Games.dll
+    namespaceName: GooglePlayGames.OurUtils
+    className: PlayGamesHelperObject
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -882,6 +887,12 @@ ScriptsOnlyBuild:
     className: BufferManager
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SmokeTest
+    className: NearbyGUI
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -912,9 +923,8 @@ ScriptsOnlyBuild:
     className: FabrikSolver2D
   platform: 13
   scenePathNames:
-  - Assets/Scenes/Game.unity
+  - Assets/Scenes/GameScene.unity
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/DeathScreen.unity
   - Assets/Scenes/Leaderboard.unity
-  - Assets/Scenes/StartGame.unity
-  playerPath: C:/Users/HP/Desktop/game/project2/game.apk
+  playerPath: C:/Users/HP/Desktop/game/project2/version_1.apk

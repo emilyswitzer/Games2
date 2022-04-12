@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
+using GooglePlayGames;
+using UnityEngine.SocialPlatforms;
 
 public class PlayerController : MonoBehaviour
 {
@@ -19,6 +21,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && isOnGround)
         {
             jump();
+            Achievements.instance.GrantAchievement("CgkIiqeWk7cJEAIQAg");
         }
     }
     void OnCollisionEnter2D(Collision2D coll)

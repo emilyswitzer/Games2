@@ -5,6 +5,8 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using GooglePlayGames;
+using UnityEngine.SocialPlatforms;
 
 public class Leaderboard : MonoBehaviour
 {
@@ -12,7 +14,8 @@ public class Leaderboard : MonoBehaviour
 
     private void Start()
     {
-       
+        Social.ShowLeaderboardUI();
+
     }
 
     
