@@ -10,13 +10,15 @@ public class LosingMenuController : MonoBehaviour
 {
     float currenthighscore;
     public Text highscore;
+    public Leaderboard l;
+    
 
     private void Start()
     {
         AdManager.instance.RequestInterstitial();
         currenthighscore = PlayerPrefs.GetFloat("HighScore", 0f);
         highscore.text = "Highscore: " + Mathf.Round(currenthighscore);
-
+        l.PostToLeaderBoard((long)currenthighscore);
 
         Achievements.instance.GrantAchievement("CgkIiqeWk7cJEAIQAQ");
         Social.ReportScore((long)currenthighscore, "CgkIiqeWk7cJEAIQBQ", (bool success) => {

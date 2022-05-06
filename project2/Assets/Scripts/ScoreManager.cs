@@ -1,3 +1,5 @@
+using GooglePlayGames;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +14,7 @@ public class ScoreManager : MonoBehaviour
     public float currenthighscore;
     public bool increaseScore;
     public float points;
-    
+    public Leaderboard l;
     // Start is called before the first frame update
 
     
@@ -54,6 +56,7 @@ public class ScoreManager : MonoBehaviour
     {
         return currenthighscore;
     }
+
 
 
 }
