@@ -26,6 +26,8 @@ struct DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B;
 struct InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C;
 // System.Runtime.CompilerServices.RuntimeCompatibilityAttribute
 struct RuntimeCompatibilityAttribute_tFF99AB2963098F9CBCD47A20D9FD3D51C17C1C80;
+// UnityEngine.SerializeField
+struct SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25;
 // System.String
 struct String_t;
 
@@ -287,6 +289,15 @@ public:
 };
 
 
+// UnityEngine.SerializeField
+struct SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
+{
+public:
+
+public:
+};
+
+
 // System.Void
 struct Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5 
 {
@@ -358,6 +369,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CompilationRelaxationsAttribute__ctor_mA
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTitleAttribute__ctor_mE239F206B3B369C48AE1F3B4211688778FE99E8D (AssemblyTitleAttribute_tABB894D0792C7F307694CC796C8AE5D6A20382E7 * __this, String_t* ___title0, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35 (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.SerializeField::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3 (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * __this, const RuntimeMethod* method);
 static void AssemblyU2DCSharp_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
 {
 	{
@@ -396,11 +409,109 @@ static void U3CU3Ec_t8597117F6FD13565A016634FADD2D94B58A6D83D_CustomAttributesCa
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
+static void U3CU3Ec_tA3560C4A8F19EF1CD7F9345E02F9633DE06EC868_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
+{
+	{
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+	}
+}
 static void U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
 {
 	{
 		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
+	}
+}
+static void RewardedAdsButton_t7F0DE7A371F355CCCF5A48E699BA0BD8FF8FD812_CustomAttributesCacheGenerator__showAdButton(CustomAttributesCache* cache)
+{
+	{
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+	}
+}
+static void RewardedAdsButton_t7F0DE7A371F355CCCF5A48E699BA0BD8FF8FD812_CustomAttributesCacheGenerator__androidAdUnitId(CustomAttributesCache* cache)
+{
+	{
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+	}
+}
+static void RewardedAdsButton_t7F0DE7A371F355CCCF5A48E699BA0BD8FF8FD812_CustomAttributesCacheGenerator__iOSAdUnitId(CustomAttributesCache* cache)
+{
+	{
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+	}
+}
+static void UnityAdManager_tABADB2D291A69FD862436EBE439ECB5D3F0E865E_CustomAttributesCacheGenerator__androidGameId(CustomAttributesCache* cache)
+{
+	{
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+	}
+}
+static void UnityAdManager_tABADB2D291A69FD862436EBE439ECB5D3F0E865E_CustomAttributesCacheGenerator__iOSGameId(CustomAttributesCache* cache)
+{
+	{
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+	}
+}
+static void UnityAdManager_tABADB2D291A69FD862436EBE439ECB5D3F0E865E_CustomAttributesCacheGenerator__testMode(CustomAttributesCache* cache)
+{
+	{
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+	}
+}
+static void UnityAdManager_tABADB2D291A69FD862436EBE439ECB5D3F0E865E_CustomAttributesCacheGenerator_rewardedAdsButton(CustomAttributesCache* cache)
+{
+	{
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+	}
+}
+static void UnityAdManager_tABADB2D291A69FD862436EBE439ECB5D3F0E865E_CustomAttributesCacheGenerator_interstitialAd(CustomAttributesCache* cache)
+{
+	{
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+	}
+}
+static void UnityBanner_t0B4E68DDDE954BAE5BEAE6EC3269D92AAB241508_CustomAttributesCacheGenerator__bannerPosition(CustomAttributesCache* cache)
+{
+	{
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+	}
+}
+static void UnityBanner_t0B4E68DDDE954BAE5BEAE6EC3269D92AAB241508_CustomAttributesCacheGenerator__androidAdUnitId(CustomAttributesCache* cache)
+{
+	{
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+	}
+}
+static void UnityBanner_t0B4E68DDDE954BAE5BEAE6EC3269D92AAB241508_CustomAttributesCacheGenerator__iOSAdUnitId(CustomAttributesCache* cache)
+{
+	{
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+	}
+}
+static void UnityInterstitialAd_tC4E3CA63376A406CD494799936FA5F3300CB2F76_CustomAttributesCacheGenerator__androidAdUnitId(CustomAttributesCache* cache)
+{
+	{
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+	}
+}
+static void UnityInterstitialAd_tC4E3CA63376A406CD494799936FA5F3300CB2F76_CustomAttributesCacheGenerator__iOsAdUnitId(CustomAttributesCache* cache)
+{
+	{
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
 	}
 }
 static void AchievementGUI_t36987CCE1372C4C522D0CA315D64B84F2A4D8922_CustomAttributesCacheGenerator_AchievementGUI_U3CDoAchievementRevealU3Eb__7_0_mAD09550D5FB4F994ACF5C49B00498B629F5D4639(CustomAttributesCache* cache)
@@ -579,16 +690,30 @@ static void U3CU3Ec_t508F7DCC9F276345FA6C048B89AC092C1582A162_CustomAttributesCa
 	}
 }
 IL2CPP_EXTERN_C const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[];
-const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[29] = 
+const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[43] = 
 {
 	U3CU3Ec_t901B74A038400F746528DD4559146C0B8B6782E0_CustomAttributesCacheGenerator,
 	U3CU3Ec_t8597117F6FD13565A016634FADD2D94B58A6D83D_CustomAttributesCacheGenerator,
+	U3CU3Ec_tA3560C4A8F19EF1CD7F9345E02F9633DE06EC868_CustomAttributesCacheGenerator,
 	U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75_CustomAttributesCacheGenerator,
 	U3CU3Ec__DisplayClass6_0_t861029E586B91531C73DE28E8A04FA9ECACBD4C6_CustomAttributesCacheGenerator,
 	U3CU3Ec__DisplayClass11_0_t4FB759DDD33A22C60775FD2F878C4AAC69EF7CAE_CustomAttributesCacheGenerator,
 	U3CU3Ec__DisplayClass12_0_t4C412A20ED93D935EA8CB175FE17C08A3F8DF70A_CustomAttributesCacheGenerator,
 	U3CU3Ec__DisplayClass44_0_t9CE91A940E4D24784FE776FB8C9A0DC8B47D3ADB_CustomAttributesCacheGenerator,
 	U3CU3Ec_t508F7DCC9F276345FA6C048B89AC092C1582A162_CustomAttributesCacheGenerator,
+	RewardedAdsButton_t7F0DE7A371F355CCCF5A48E699BA0BD8FF8FD812_CustomAttributesCacheGenerator__showAdButton,
+	RewardedAdsButton_t7F0DE7A371F355CCCF5A48E699BA0BD8FF8FD812_CustomAttributesCacheGenerator__androidAdUnitId,
+	RewardedAdsButton_t7F0DE7A371F355CCCF5A48E699BA0BD8FF8FD812_CustomAttributesCacheGenerator__iOSAdUnitId,
+	UnityAdManager_tABADB2D291A69FD862436EBE439ECB5D3F0E865E_CustomAttributesCacheGenerator__androidGameId,
+	UnityAdManager_tABADB2D291A69FD862436EBE439ECB5D3F0E865E_CustomAttributesCacheGenerator__iOSGameId,
+	UnityAdManager_tABADB2D291A69FD862436EBE439ECB5D3F0E865E_CustomAttributesCacheGenerator__testMode,
+	UnityAdManager_tABADB2D291A69FD862436EBE439ECB5D3F0E865E_CustomAttributesCacheGenerator_rewardedAdsButton,
+	UnityAdManager_tABADB2D291A69FD862436EBE439ECB5D3F0E865E_CustomAttributesCacheGenerator_interstitialAd,
+	UnityBanner_t0B4E68DDDE954BAE5BEAE6EC3269D92AAB241508_CustomAttributesCacheGenerator__bannerPosition,
+	UnityBanner_t0B4E68DDDE954BAE5BEAE6EC3269D92AAB241508_CustomAttributesCacheGenerator__androidAdUnitId,
+	UnityBanner_t0B4E68DDDE954BAE5BEAE6EC3269D92AAB241508_CustomAttributesCacheGenerator__iOSAdUnitId,
+	UnityInterstitialAd_tC4E3CA63376A406CD494799936FA5F3300CB2F76_CustomAttributesCacheGenerator__androidAdUnitId,
+	UnityInterstitialAd_tC4E3CA63376A406CD494799936FA5F3300CB2F76_CustomAttributesCacheGenerator__iOsAdUnitId,
 	AchievementGUI_t36987CCE1372C4C522D0CA315D64B84F2A4D8922_CustomAttributesCacheGenerator_AchievementGUI_U3CDoAchievementRevealU3Eb__7_0_mAD09550D5FB4F994ACF5C49B00498B629F5D4639,
 	AchievementGUI_t36987CCE1372C4C522D0CA315D64B84F2A4D8922_CustomAttributesCacheGenerator_AchievementGUI_U3CDoAchievementUnlockU3Eb__8_0_m829F40FB6043B2586893ADB3FCD534B6F764393E,
 	AchievementGUI_t36987CCE1372C4C522D0CA315D64B84F2A4D8922_CustomAttributesCacheGenerator_AchievementGUI_U3CDoAchievementIncrementU3Eb__9_0_m44DCF461605A486218B9DF5D469BD42101A26DA0,

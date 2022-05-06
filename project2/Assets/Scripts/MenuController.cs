@@ -7,9 +7,11 @@ public class MenuController : MonoBehaviour
 {
     public ScoreManager tsm;
 
+
     private void Start()
     {
         AdManager.instance.RequestRewardAd();
+   
 
     }
     public void PlayGame()
