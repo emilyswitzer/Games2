@@ -10,11 +10,10 @@ public class GPGSManager : MonoBehaviour
 {
     public Text statusText;
     public Text desc;
-
     // Start is called before the first frame update
     void Start()
     {
-       
+
         PlayGamesPlatform.DebugLogEnabled = true;
        
         PlayGamesPlatform.Activate();
@@ -22,7 +21,7 @@ public class GPGSManager : MonoBehaviour
        
     }
 
-    internal void ProcessAuthentication(SignInStatus status)
+    public void ProcessAuthentication(SignInStatus status)
     {
         if (status == SignInStatus.Success)
         {
@@ -31,6 +30,7 @@ public class GPGSManager : MonoBehaviour
         }
         else
         {
+            
             statusText.text = "Failed to authenticate";
             desc.text = "Failed to authenticate because " + status;
         }

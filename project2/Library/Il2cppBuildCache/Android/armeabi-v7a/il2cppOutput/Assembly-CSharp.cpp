@@ -9846,10 +9846,6 @@ inline void Action_1__ctor_m6D67E0BED17154E031E194DC24D7381B6EF77F55 (Action_1_t
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MobileAds_Initialize_m162D01EF10764A82B218C4D6496F71CF4F50529B (Action_1_t73B690804B71062EA366B9EF731317DA6FE13907 * ___initCompleteAction0, const RuntimeMethod* method);
 // System.Void AdManager::RequestBanner()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdManager_RequestBanner_m912724076033B6FFB933BA8C48C4FB0E94C387C5 (AdManager_tAAF35B6E920E54303B2EAC3F3096D40E666A6AF8 * __this, const RuntimeMethod* method);
-// System.Void AdManager::RequestInterstitial()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdManager_RequestInterstitial_m6B20BA5AC43907C6BA7724B25B570F6540E332B3 (AdManager_tAAF35B6E920E54303B2EAC3F3096D40E666A6AF8 * __this, const RuntimeMethod* method);
-// System.Void AdManager::RequestRewardAd()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdManager_RequestRewardAd_m110A85FB30010706955460FA82217E511281C397 (AdManager_tAAF35B6E920E54303B2EAC3F3096D40E666A6AF8 * __this, const RuntimeMethod* method);
 // System.Void GoogleMobileAds.Api.AdRequest/Builder::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Builder__ctor_m1737DCAE8B76039318B4AAEB15B5905C351605E2 (Builder_t127215BE9C4DAAE30F9535E425A34BDDFFADF7F4 * __this, const RuntimeMethod* method);
 // GoogleMobileAds.Api.AdRequest GoogleMobileAds.Api.AdRequest/Builder::Build()
@@ -9899,6 +9895,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardedAd_Show_m97EB3DC60C0273CF7F5A49E
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool InterstitialAd_IsLoaded_m539CECD9169FE98801CF14A6EDBCD9C0A26A4038_inline (InterstitialAd_t9ED58965C70F2CF9E66F92EAE19149A1A237E8C9 * __this, const RuntimeMethod* method);
 // System.Void GoogleMobileAds.Api.InterstitialAd::Show()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialAd_Show_m6111A6CEA42D17DDF9C6E3A2D8E6FC9E7C46EA28 (InterstitialAd_t9ED58965C70F2CF9E66F92EAE19149A1A237E8C9 * __this, const RuntimeMethod* method);
+// System.Void AdManager::RequestRewardAd()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdManager_RequestRewardAd_m110A85FB30010706955460FA82217E511281C397 (AdManager_tAAF35B6E920E54303B2EAC3F3096D40E666A6AF8 * __this, const RuntimeMethod* method);
 // UnityEngine.SocialPlatforms.ILocalUser UnityEngine.Social::get_localUser()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Social_get_localUser_m3C570106A10EE66C0172C291AE2084829B64C468 (const RuntimeMethod* method);
 // GooglePlayGames.BasicApi.LoadFriendsStatus GooglePlayGames.PlayGamesPlatform::GetLastLoadFriendsStatus()
@@ -10055,12 +10053,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt64_ToString_m3644686F0A0E32CB94
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IScoreU5BU5D_t9FEEC91A3D90CD5770DA4EFB8DFCF5340A279C5A* LeaderboardScoreData_get_Scores_m1C6059BF8B075C943DBFC3A5841E096D1F274BD7 (LeaderboardScoreData_t7946A6078C07768D37E222231A650A7D3DFFDDD0 * __this, const RuntimeMethod* method);
 // GooglePlayGames.BasicApi.ResponseStatus GooglePlayGames.BasicApi.LeaderboardScoreData::get_Status()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t LeaderboardScoreData_get_Status_m6E9F909E62DBD80DDB6FB349C130FCDFAC973696_inline (LeaderboardScoreData_t7946A6078C07768D37E222231A650A7D3DFFDDD0 * __this, const RuntimeMethod* method);
+// System.Void AdManager::RequestInterstitial()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdManager_RequestInterstitial_m6B20BA5AC43907C6BA7724B25B570F6540E332B3 (AdManager_tAAF35B6E920E54303B2EAC3F3096D40E666A6AF8 * __this, const RuntimeMethod* method);
 // System.Single UnityEngine.PlayerPrefs::GetFloat(System.String,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PlayerPrefs_GetFloat_mCF1F69BE283197090AB08158CD05995136A1EBCF (String_t* ___key0, float ___defaultValue1, const RuntimeMethod* method);
 // System.String System.Single::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_m80E7ABED4F4D73F2BE19DDB80D3D92FCD8DFA010 (float* __this, const RuntimeMethod* method);
-// System.Void Achievements::GrantAchievement(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Achievements_GrantAchievement_m883F342B2C07A5C70DFA541696BE41EB41A6C6F3 (Achievements_tC917CFF52C83E75EE1432A268C9BFD62EFD23FAB * __this, String_t* ___achievement0, const RuntimeMethod* method);
 // System.Int32 UnityEngine.Random::Range(System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Random_Range_m4B3A0037ACA057F33C94508F908546B9317D996A (int32_t ___minInclusive0, int32_t ___maxExclusive1, const RuntimeMethod* method);
 // System.Void AdManager::ShowInterstitial()
@@ -10567,6 +10565,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Advertisement_Show_m071C393E0C799119892E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEventBase_RemoveAllListeners_m934834C85F5CFE62BEDA9CF4DE9C5B8B5470F1D9 (UnityEventBase_tBB43047292084BA63C5CBB1A379A8BB88611C6FB * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.PlayerPrefs::SetFloat(System.String,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerPrefs_SetFloat_mF660C042621E97A05AD99134DBDD9B1205CDD214 (String_t* ___key0, float ___value1, const RuntimeMethod* method);
+// System.Void Achievements::GrantAchievement(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Achievements_GrantAchievement_m883F342B2C07A5C70DFA541696BE41EB41A6C6F3 (Achievements_tC917CFF52C83E75EE1432A268C9BFD62EFD23FAB * __this, String_t* ___achievement0, const RuntimeMethod* method);
 // UnityEngine.Vector2 UnityEngine.Material::get_mainTextureOffset()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  Material_get_mainTextureOffset_m515864AC74B322365689879CC668D001C41577D4 (Material_t8927C00353A72755313F046D0CE85178AE8218EE * __this, const RuntimeMethod* method);
 // UnityEngine.Vector2 UnityEngine.Vector2::op_Addition(UnityEngine.Vector2,UnityEngine.Vector2)
@@ -10579,8 +10579,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityAdManager_InitializeAds_mBDE526EDA1
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Application_get_platform_mB22F7F39CDD46667C3EF64507E55BB7DA18F66C4 (const RuntimeMethod* method);
 // System.Void UnityEngine.Advertisements.Advertisement::Initialize(System.String,System.Boolean,UnityEngine.Advertisements.IUnityAdsInitializationListener)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Advertisement_Initialize_m341F408B4E91584DB6E6A405831C7B1909E26F1D (String_t* ___gameId0, bool ___testMode1, RuntimeObject* ___initializationListener2, const RuntimeMethod* method);
-// System.Void UnityInterstitialAd::LoadAd()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityInterstitialAd_LoadAd_m1D1346E2196567F7F4F3A6A0FA12D08E21571B6D (UnityInterstitialAd_tC4E3CA63376A406CD494799936FA5F3300CB2F76 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Advertisements.Advertisement/Banner::SetPosition(UnityEngine.Advertisements.BannerPosition)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Banner_SetPosition_m1FA17B74A43261762C98FFA2757E829460799791 (int32_t ___position0, const RuntimeMethod* method);
 // System.Void UnityBanner::LoadBanner()
@@ -10615,6 +10613,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Banner_Show_m763900AF3FED6F2E85F03DD6B04
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Banner_Hide_m4C66EAF53C9EA5F91867C2AC0BE80745DE16C028 (bool ___destroy0, const RuntimeMethod* method);
 // System.Void UnityBanner::HideBannerAd()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityBanner_HideBannerAd_m9F16727EE5847218594A487F0C423622146E1BE4 (UnityBanner_t0B4E68DDDE954BAE5BEAE6EC3269D92AAB241508 * __this, const RuntimeMethod* method);
+// System.Void UnityInterstitialAd::LoadAd()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityInterstitialAd_LoadAd_m1D1346E2196567F7F4F3A6A0FA12D08E21571B6D (UnityInterstitialAd_tC4E3CA63376A406CD494799936FA5F3300CB2F76 * __this, const RuntimeMethod* method);
 // System.Void Achievements/<>c::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m3B6575DE15103BC8145D81C9D1980E8FEDF9E208 (U3CU3Ec_t901B74A038400F746528DD4559146C0B8B6782E0 * __this, const RuntimeMethod* method);
 // System.Void System.Object::.ctor()
@@ -11909,10 +11909,6 @@ IL_001f:
 		MobileAds_Initialize_m162D01EF10764A82B218C4D6496F71CF4F50529B(G_B2_0, /*hidden argument*/NULL);
 		// this.RequestBanner();
 		AdManager_RequestBanner_m912724076033B6FFB933BA8C48C4FB0E94C387C5(__this, /*hidden argument*/NULL);
-		// this.RequestInterstitial();
-		AdManager_RequestInterstitial_m6B20BA5AC43907C6BA7724B25B570F6540E332B3(__this, /*hidden argument*/NULL);
-		// this.RequestRewardAd();
-		AdManager_RequestRewardAd_m110A85FB30010706955460FA82217E511281C397(__this, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -14425,13 +14421,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LosingMenuController_Start_m103C5978B17F
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Achievements_tC917CFF52C83E75EE1432A268C9BFD62EFD23FAB_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1__ctor_m2A1B34C27CAE6ED7FD924E5F59C0A1ACBBF22C38_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AdManager_tAAF35B6E920E54303B2EAC3F3096D40E666A6AF8_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3CStartU3Eb__3_0_m27654D806E78882145875ED61741E59FDBAE34B7_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral24A4677BDC659B24E954BFE2CF3EECB6B10DB5AA);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3632213D60B5C0CA9BD6FD44599110D0BAC3DBF8);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral79B0BC20C4F38EB2142290F5EFAB4EF138899A9B);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9B400A3C05270967C9FF6D332F9489CD82B7702A);
@@ -14465,10 +14459,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LosingMenuController_Start_m103C5978B17F
 		L_6 = String_Concat_m4B4AB72618348C5DFBFBA8DED84B9E2EBDB55E1B(_stringLiteral3632213D60B5C0CA9BD6FD44599110D0BAC3DBF8, L_5, /*hidden argument*/NULL);
 		NullCheck(L_2);
 		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_6);
-		// Achievements.instance.GrantAchievement("CgkIiqeWk7cJEAIQAQ");
-		Achievements_tC917CFF52C83E75EE1432A268C9BFD62EFD23FAB * L_7 = ((Achievements_tC917CFF52C83E75EE1432A268C9BFD62EFD23FAB_StaticFields*)il2cpp_codegen_static_fields_for(Achievements_tC917CFF52C83E75EE1432A268C9BFD62EFD23FAB_il2cpp_TypeInfo_var))->get_instance_4();
-		NullCheck(L_7);
-		Achievements_GrantAchievement_m883F342B2C07A5C70DFA541696BE41EB41A6C6F3(L_7, _stringLiteral24A4677BDC659B24E954BFE2CF3EECB6B10DB5AA, /*hidden argument*/NULL);
 		// Social.ReportScore((long)currenthighscore, "CgkIiqeWk7cJEAIQBQ", (bool success) => {
 		//     if (success)
 		//     {
@@ -14479,34 +14469,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LosingMenuController_Start_m103C5978B17F
 		//         Debug.Log("Not successful");
 		//     }
 		// });
-		float L_8 = __this->get_currenthighscore_4();
+		float L_7 = __this->get_currenthighscore_4();
 		IL2CPP_RUNTIME_CLASS_INIT(U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75_il2cpp_TypeInfo_var);
-		Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * L_9 = ((U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75_il2cpp_TypeInfo_var))->get_U3CU3E9__3_0_1();
-		Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * L_10 = L_9;
-		G_B1_0 = L_10;
+		Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * L_8 = ((U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75_il2cpp_TypeInfo_var))->get_U3CU3E9__3_0_1();
+		Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * L_9 = L_8;
+		G_B1_0 = L_9;
 		G_B1_1 = _stringLiteral9B400A3C05270967C9FF6D332F9489CD82B7702A;
-		G_B1_2 = il2cpp_codegen_cast_double_to_int<int64_t>(L_8);
-		if (L_10)
+		G_B1_2 = il2cpp_codegen_cast_double_to_int<int64_t>(L_7);
+		if (L_9)
 		{
-			G_B2_0 = L_10;
+			G_B2_0 = L_9;
 			G_B2_1 = _stringLiteral9B400A3C05270967C9FF6D332F9489CD82B7702A;
-			G_B2_2 = il2cpp_codegen_cast_double_to_int<int64_t>(L_8);
-			goto IL_0081;
+			G_B2_2 = il2cpp_codegen_cast_double_to_int<int64_t>(L_7);
+			goto IL_0072;
 		}
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75_il2cpp_TypeInfo_var);
-		U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75 * L_11 = ((U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75_il2cpp_TypeInfo_var))->get_U3CU3E9_0();
-		Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * L_12 = (Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 *)il2cpp_codegen_object_new(Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83_il2cpp_TypeInfo_var);
-		Action_1__ctor_m2A1B34C27CAE6ED7FD924E5F59C0A1ACBBF22C38(L_12, L_11, (intptr_t)((intptr_t)U3CU3Ec_U3CStartU3Eb__3_0_m27654D806E78882145875ED61741E59FDBAE34B7_RuntimeMethod_var), /*hidden argument*/Action_1__ctor_m2A1B34C27CAE6ED7FD924E5F59C0A1ACBBF22C38_RuntimeMethod_var);
-		Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * L_13 = L_12;
-		((U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75_il2cpp_TypeInfo_var))->set_U3CU3E9__3_0_1(L_13);
-		G_B2_0 = L_13;
+		U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75 * L_10 = ((U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75_il2cpp_TypeInfo_var))->get_U3CU3E9_0();
+		Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * L_11 = (Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 *)il2cpp_codegen_object_new(Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83_il2cpp_TypeInfo_var);
+		Action_1__ctor_m2A1B34C27CAE6ED7FD924E5F59C0A1ACBBF22C38(L_11, L_10, (intptr_t)((intptr_t)U3CU3Ec_U3CStartU3Eb__3_0_m27654D806E78882145875ED61741E59FDBAE34B7_RuntimeMethod_var), /*hidden argument*/Action_1__ctor_m2A1B34C27CAE6ED7FD924E5F59C0A1ACBBF22C38_RuntimeMethod_var);
+		Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * L_12 = L_11;
+		((U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tAAC7E7FE2E311DB55FCBA3799B55BA92B68E4D75_il2cpp_TypeInfo_var))->set_U3CU3E9__3_0_1(L_12);
+		G_B2_0 = L_12;
 		G_B2_1 = G_B1_1;
 		G_B2_2 = G_B1_2;
 	}
 
-IL_0081:
+IL_0072:
 	{
 		Social_ReportScore_m9D47693DE21BDF21D8933E2B039A96D7E579EE13(G_B2_2, G_B2_1, G_B2_0, /*hidden argument*/NULL);
 		// }
@@ -20813,39 +20803,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_Start_m9531F30EC892BDD1
 // System.Void PlayerController::Update()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_Update_mB31159CAD7DD2329859472554BC9154A83D8E794 (PlayerController_tDFE946D0FE1CB988FC3DC902E05737A2A62CA3D9 * __this, const RuntimeMethod* method)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Achievements_tC917CFF52C83E75EE1432A268C9BFD62EFD23FAB_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB81A5616BABCF30521FCEEBD31AC767E6B477CBB);
-		s_Il2CppMethodInitialized = true;
-	}
 	{
 		// if (Input.GetMouseButtonDown(0) && isOnGround)
 		bool L_0;
 		L_0 = Input_GetMouseButtonDown_m466D81FDCC87C9CB07557B39DCB435EB691F1EF3(0, /*hidden argument*/NULL);
 		if (!L_0)
 		{
-			goto IL_0025;
+			goto IL_0016;
 		}
 	}
 	{
 		bool L_1 = __this->get_isOnGround_4();
 		if (!L_1)
 		{
-			goto IL_0025;
+			goto IL_0016;
 		}
 	}
 	{
 		// jump();
 		PlayerController_jump_mCE3947E007F59EA15908F86AB03589C6B52A2D5D(__this, /*hidden argument*/NULL);
-		// Achievements.instance.GrantAchievement("CgkIiqeWk7cJEAIQAg");
-		Achievements_tC917CFF52C83E75EE1432A268C9BFD62EFD23FAB * L_2 = ((Achievements_tC917CFF52C83E75EE1432A268C9BFD62EFD23FAB_StaticFields*)il2cpp_codegen_static_fields_for(Achievements_tC917CFF52C83E75EE1432A268C9BFD62EFD23FAB_il2cpp_TypeInfo_var))->get_instance_4();
-		NullCheck(L_2);
-		Achievements_GrantAchievement_m883F342B2C07A5C70DFA541696BE41EB41A6C6F3(L_2, _stringLiteralB81A5616BABCF30521FCEEBD31AC767E6B477CBB, /*hidden argument*/NULL);
 	}
 
-IL_0025:
+IL_0016:
 	{
 		// }
 		return;
@@ -21566,14 +21545,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityAdManager_OnInitializationComplete_
 		// Debug.Log("Unity Ads initialization complete.");
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
 		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(_stringLiteral6AC83B16A16E7A6F6CCAD22E41FB93F9AE1BC676, /*hidden argument*/NULL);
-		// rewardedAdsButton.LoadAd();
-		RewardedAdsButton_t7F0DE7A371F355CCCF5A48E699BA0BD8FF8FD812 * L_0 = __this->get_rewardedAdsButton_8();
-		NullCheck(L_0);
-		RewardedAdsButton_LoadAd_mD80A0AB8A6DE72DF36E6F74C80296902218533FB(L_0, /*hidden argument*/NULL);
-		// interstitialAd.LoadAd();
-		UnityInterstitialAd_tC4E3CA63376A406CD494799936FA5F3300CB2F76 * L_1 = __this->get_interstitialAd_9();
-		NullCheck(L_1);
-		UnityInterstitialAd_LoadAd_m1D1346E2196567F7F4F3A6A0FA12D08E21571B6D(L_1, /*hidden argument*/NULL);
 		// }
 		return;
 	}

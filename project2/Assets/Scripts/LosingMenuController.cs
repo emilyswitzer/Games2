@@ -22,7 +22,6 @@ public class LosingMenuController : MonoBehaviour
         //PlayGames.getLeaderboardsClient(this).submitScore(getString(R.string.leaderboard_id), currenthighscore);
      //   l.PostToLeaderBoard((long)currenthighscore);
 
-        Achievements.instance.GrantAchievement("CgkIiqeWk7cJEAIQAQ");
         Social.ReportScore((long)currenthighscore, "CgkIiqeWk7cJEAIQBQ", (bool success) => {
             if (success)
             {
