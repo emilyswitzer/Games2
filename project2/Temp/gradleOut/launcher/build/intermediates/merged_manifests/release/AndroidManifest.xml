@@ -3,8 +3,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.Boxjump.Boxjump"
     android:installLocation="preferExternal"
-    android:versionCode="5"
-    android:versionName="5" >
+    android:versionCode="6"
+    android:versionName="6" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -18,7 +18,6 @@
         android:xlargeScreens="true" />
 
     <uses-feature android:glEsVersion="0x00020000" />
-    <uses-feature android:name="android.software.home_screen" />
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -101,7 +100,7 @@
             android:value="portrait|landscape" />
         <meta-data
             android:name="unity.build-id"
-            android:value="e225289e-d726-455b-a349-74877cd1eceb" />
+            android:value="834792d7-3d1d-47c9-b61c-a520669672b3" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"

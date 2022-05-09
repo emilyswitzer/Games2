@@ -15,12 +15,14 @@ public class GPGSManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-// PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
-       // PlayGamesPlatform.InitializeInstance(config);
+        PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
+       
+        PlayGamesPlatform.InitializeInstance(config);
         PlayGamesPlatform.DebugLogEnabled = true;
        
         PlayGamesPlatform.Activate();
         PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
+       
     }
 
     internal void ProcessAuthentication(SignInStatus status)
