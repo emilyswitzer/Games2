@@ -21,7 +21,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && isOnGround)
         {
             jump();
-            Achievements.instance.GrantAchievement("CgkIiqeWk7cJEAIQAg");
         }
     }
     void OnCollisionEnter2D(Collision2D coll)

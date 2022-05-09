@@ -1,29 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using GooglePlayGames;
-using GooglePlayGames.BasicApi;
-using UnityEngine.UI;
-using UnityEngine.SocialPlatforms;
 using System;
+using UnityEngine.UI;
+using UnityEngine;
+using GooglePlayGames.BasicApi;
+using GooglePlayGames;
+
+
 
 public class GPGSManager : MonoBehaviour
 {
     public Text statusText;
     public Text desc;
-
     // Start is called before the first frame update
     void Start()
     {
-// PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
-       // PlayGamesPlatform.InitializeInstance(config);
+
         PlayGamesPlatform.DebugLogEnabled = true;
        
         PlayGamesPlatform.Activate();
         PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
+       
     }
 
-    internal void ProcessAuthentication(SignInStatus status)
+    public void ProcessAuthentication(SignInStatus status)
     {
         if (status == SignInStatus.Success)
         {
@@ -32,6 +30,7 @@ public class GPGSManager : MonoBehaviour
         }
         else
         {
+            
             statusText.text = "Failed to authenticate";
             desc.text = "Failed to authenticate because " + status;
         }

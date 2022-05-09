@@ -1,0 +1,2 @@
+C:\Users\HP\Desktop\game\project2\obj\Debug\UnityEditor.UI.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\game\project2\obj\Debug\UnityEditor.UI.csproj.CoreCompileInputs.cache
