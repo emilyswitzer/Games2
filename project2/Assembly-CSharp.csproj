@@ -65,23 +65,23 @@
     <Compile Include="Assets\SmokeTest\Scripts\MainGui.cs" />
     <Compile Include="Assets\Scripts\Leaderboard.cs" />
     <Compile Include="Assets\Scripts\RowUI.cs" />
+    <Compile Include="Assets\Scripts\UnityBanner.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\UnityAdManager.cs" />
     <Compile Include="Assets\Scripts\Generator.cs" />
     <Compile Include="Assets\SmokeTest\GPGSIds.cs" />
     <Compile Include="Assets\Scripts\GPGSManager.cs" />
     <Compile Include="Assets\Scripts\StartScript.cs" />
     <Compile Include="Assets\SmokeTest\Scripts\AchievementGUI.cs" />
     <Compile Include="Assets\Scripts\InputEntry.cs" />
+    <Compile Include="Assets\Scripts\UnityInterstitialAd.cs" />
     <Compile Include="Assets\Scripts\FileHandler.cs" />
     <Compile Include="Assets\Scripts\Obstacle.cs" />
     <Compile Include="Assets\Scripts\AdManager.cs" />
     <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\LosingMenuController.cs" />
-    <Compile Include="Assets\SmokeTest\Scripts\NearbyGUI.cs" />
-    <Compile Include="Assets\Scripts\UnityAdManager.cs" />
     <Compile Include="Assets\Scripts\RewardedAdsButton.cs" />
-    <Compile Include="Assets\Scripts\UnityInterstitialAd.cs" />
-    <Compile Include="Assets\Scripts\UnityBanner.cs" />
+    <Compile Include="Assets\SmokeTest\Scripts\NearbyGUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds_version-7.0.0_manifest.txt" />
@@ -308,8 +308,8 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="GoogleMobileAds.Core">
-      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Core.dll</HintPath>
+    <Reference Include="GoogleMobileAds.Common">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Common.dll</HintPath>
     </Reference>
     <Reference Include="GoogleMobileAds">
       <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.dll</HintPath>
@@ -317,8 +317,8 @@
     <Reference Include="GoogleMobileAds.Unity">
       <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Unity.dll</HintPath>
     </Reference>
-    <Reference Include="GoogleMobileAds.Common">
-      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Common.dll</HintPath>
+    <Reference Include="GoogleMobileAds.Core">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Core.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -707,6 +707,10 @@
       <Project>{8AD8A903-2A06-D20A-45CD-8E209E202FCD}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
+    <ProjectReference Include="UnityEngine.Advertisements.csproj">
+      <Project>{8DB335BF-E6A4-4311-2671-B66CF45CE77D}</Project>
+      <Name>UnityEngine.Advertisements</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.IK.Editor.csproj">
       <Project>{A1640CED-A7F6-4CD3-1FC4-4F2CE9AF0266}</Project>
       <Name>Unity.2D.IK.Editor</Name>
@@ -787,6 +791,10 @@
       <Project>{A24A2157-33D2-55DD-4440-9F49A194A724}</Project>
       <Name>GoogleMobileAds.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="UnityEngine.Advertisements.Editor.csproj">
+      <Project>{C507242C-5151-4E11-7597-EFB2CC4F5340}</Project>
+      <Name>UnityEngine.Advertisements.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Editor.csproj">
       <Project>{AB63FDA9-D529-7E1F-9291-3B2C9847D5C2}</Project>
       <Name>Unity.2D.Common.Editor</Name>
@@ -798,14 +806,6 @@
     <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
       <Project>{181BFDC8-57B4-4372-007B-E06FD9A78026}</Project>
       <Name>Unity.2D.SpriteShape.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Advertisements.csproj">
-      <Project>{8DB335BF-E6A4-4311-2671-B66CF45CE77D}</Project>
-      <Name>UnityEngine.Advertisements</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Advertisements.Editor.csproj">
-      <Project>{C507242C-5151-4E11-7597-EFB2CC4F5340}</Project>
-      <Name>UnityEngine.Advertisements.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
