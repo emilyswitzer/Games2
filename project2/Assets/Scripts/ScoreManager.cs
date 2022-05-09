@@ -14,7 +14,6 @@ public class ScoreManager : MonoBehaviour
     public float currenthighscore;
     public bool increaseScore;
     public float points;
-    public GPGSManager l;
     // Start is called before the first frame update
 
     
@@ -25,8 +24,7 @@ public class ScoreManager : MonoBehaviour
         currenthighscore = PlayerPrefs.GetFloat("HighScore", 0f);
         increaseScore = true;
         points = 1f;
-        long score = Convert.ToInt64(currenthighscore);
-        l.PostToLeaderBoard(score);
+   
     }
 
     // Update is called once per frame
@@ -40,7 +38,7 @@ public class ScoreManager : MonoBehaviour
         {
             currenthighscore = currentscore;
        
-            PlayerPrefs.SetFloat("HighScore", currentscore);
+            PlayerPrefs.SetFloat("HighScore", currenthighscore);
             Achievements.instance.GrantAchievement("CgkIiqeWk7cJEAIQAw");
 
             
@@ -51,12 +49,6 @@ public class ScoreManager : MonoBehaviour
         
     }
 
-    
-
-    public float getHighScore()
-    {
-        return currenthighscore;
-    }
 
 
 
