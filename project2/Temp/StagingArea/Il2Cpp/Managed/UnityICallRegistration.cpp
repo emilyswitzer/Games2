@@ -690,10 +690,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Application_get_isPlaying();
 		Register_UnityEngine_Application_get_isPlaying();
 
-		//System.String UnityEngine.Application::get_persistentDataPath()
-		void Register_UnityEngine_Application_get_persistentDataPath();
-		Register_UnityEngine_Application_get_persistentDataPath();
-
 		//System.String UnityEngine.Application::get_unityVersion()
 		void Register_UnityEngine_Application_get_unityVersion();
 		Register_UnityEngine_Application_get_unityVersion();
@@ -1796,18 +1792,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Input
 
-	//Start Registrations for type : UnityEngine.JsonUtility
-
-		//System.Object UnityEngine.JsonUtility::FromJsonInternal(System.String,System.Object,System.Type)
-		void Register_UnityEngine_JsonUtility_FromJsonInternal();
-		Register_UnityEngine_JsonUtility_FromJsonInternal();
-
-		//System.String UnityEngine.JsonUtility::ToJsonInternal(System.Object,System.Boolean)
-		void Register_UnityEngine_JsonUtility_ToJsonInternal();
-		Register_UnityEngine_JsonUtility_ToJsonInternal();
-
-	//End Registrations for type : UnityEngine.JsonUtility
-
 	//Start Registrations for type : UnityEngine.Light
 
 		//System.Single UnityEngine.Light::get_bounceIntensity()
@@ -2313,10 +2297,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Boolean UnityEngine.PlayerPrefs::TrySetFloat(System.String,System.Single)
 		void Register_UnityEngine_PlayerPrefs_TrySetFloat();
 		Register_UnityEngine_PlayerPrefs_TrySetFloat();
-
-		//System.Boolean UnityEngine.PlayerPrefs::TrySetSetString(System.String,System.String)
-		void Register_UnityEngine_PlayerPrefs_TrySetSetString();
-		Register_UnityEngine_PlayerPrefs_TrySetSetString();
 
 		//System.Single UnityEngine.PlayerPrefs::GetFloat(System.String,System.Single)
 		void Register_UnityEngine_PlayerPrefs_GetFloat();

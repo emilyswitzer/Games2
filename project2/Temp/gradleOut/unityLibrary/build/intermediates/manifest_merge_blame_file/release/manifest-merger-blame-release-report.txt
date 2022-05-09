@@ -110,7 +110,7 @@
 62-->C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:17:5-101
 63            android:name="unity.build-id"
 63-->C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:17:16-45
-64            android:value="834792d7-3d1d-47c9-b61c-a520669672b3" />
+64            android:value="c8842b77-dd1d-45bc-9cd1-d869453fe32f" />
 64-->C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:17:46-98
 65    </application>
 66

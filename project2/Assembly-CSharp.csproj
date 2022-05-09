@@ -72,7 +72,6 @@
     <Compile Include="Assets\SmokeTest\GPGSIds.cs" />
     <Compile Include="Assets\Scripts\GPGSManager.cs" />
     <Compile Include="Assets\SmokeTest\Scripts\AchievementGUI.cs" />
-    <Compile Include="Assets\Scripts\InputEntry.cs" />
     <Compile Include="Assets\Scripts\UnityInterstitialAd.cs" />
     <Compile Include="Assets\Scripts\Obstacle.cs" />
     <Compile Include="Assets\Scripts\AdManager.cs" />

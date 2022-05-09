@@ -101,7 +101,7 @@
             android:value="portrait|landscape" />
         <meta-data
             android:name="unity.build-id"
-            android:value="834792d7-3d1d-47c9-b61c-a520669672b3" />
+            android:value="c8842b77-dd1d-45bc-9cd1-d869453fe32f" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"

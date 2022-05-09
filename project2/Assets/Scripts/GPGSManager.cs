@@ -1,10 +1,10 @@
-
-using UnityEngine;
-using GooglePlayGames;
-using GooglePlayGames.BasicApi;
-using UnityEngine.UI;
-using UnityEngine.SocialPlatforms;
 using System;
+using UnityEngine.UI;
+using UnityEngine;
+using GooglePlayGames.BasicApi;
+using GooglePlayGames;
+
+
 
 public class GPGSManager : MonoBehaviour
 {
@@ -14,9 +14,7 @@ public class GPGSManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      //  PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
        
-     //   PlayGamesPlatform.InitializeInstance(config);
         PlayGamesPlatform.DebugLogEnabled = true;
        
         PlayGamesPlatform.Activate();
