@@ -56,20 +56,20 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\Settings\GameIdsUi.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\Settings\PluginUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\Utils\AdsDashboardUrls.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\Networking\RequestGameIds.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\EditorGameServices\AdsService.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\EditorGameServices\AdsServiceIdentifier.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\Utils\EditorTimer.cs" />
     <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\Settings\AdsSettingsProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\Settings\UiUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\Settings\GettingStartedUi.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\EditorGameServices\AdsServiceIdentifier.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\Settings\TestModeUi.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\Networking\RequestGameIds.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\Settings\GameIdsUi.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\Settings\UiConstants.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\Settings\PluginUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\Utils\EditorTimer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\EditorGameServices\AdsService.cs" />
     <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\EditorGameServices\AdsServiceEnabler.cs" />
     <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\Settings\AdsServiceTopMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\Settings\TestModeUi.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\Settings\UiConstants.cs" />
     <Compile Include="Library\PackageCache\com.unity.ads@4.1.0\Editor\DevX\EditorGameServices\Analytics\EditorGameServiceAnalyticsSender.cs" />
   </ItemGroup>
   <ItemGroup>

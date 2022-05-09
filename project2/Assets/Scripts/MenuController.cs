@@ -39,7 +39,7 @@ public class MenuController : MonoBehaviour
     }
     public void Leaderboard()
     {
-        SceneManager.LoadScene("Leaderboard");
+      
     }
 
     public void exitGame()

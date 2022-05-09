@@ -39,14 +39,14 @@ public class AdManager : MonoBehaviour
     }
     private void RequestBanner()
     {
-        string adUnitID = "ca-app-pub-3940256099942544/6300978111";
+        string adUnitID = "ca-app-pub-9403107411698091/2307606128";
         this.bannerAd = new BannerView(adUnitID, AdSize.SmartBanner, AdPosition.Bottom);
      
         this.bannerAd.LoadAd(CreateAdRequest());
     }
     public void RequestInterstitial()
     {
-        string adUnitID = "ca-app-pub-3940256099942544/1033173712";
+        string adUnitID = "ca-app-pub-9403107411698091/3983935280";
         if(this.interstitial != null)
         {
             this.interstitial.Destroy();
@@ -59,7 +59,7 @@ public class AdManager : MonoBehaviour
 
     public void RequestRewardAd()
     {
-        rewardedAd = new RewardedAd("ca-app-pub-3940256099942544/5224354917");
+        rewardedAd = new RewardedAd("ca-app-pub-9403107411698091/3607658626");
         rewardedAd.OnUserEarnedReward += HandleUserEarnedReward;
         rewardedAd.OnAdClosed += HandleRewardedAdClosed;
         rewardedAd.OnAdFailedToShow += HandleRewardedAdFailedToShow;

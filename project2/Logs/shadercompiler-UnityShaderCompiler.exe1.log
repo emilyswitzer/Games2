@@ -1,0 +1,6 @@
+Base path: 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+
+Cmd: disassembleShader
+ name=Unlit/Texture platform=gles type=5 mask=6 insize=1400 outsize=1400 ok=1
+
