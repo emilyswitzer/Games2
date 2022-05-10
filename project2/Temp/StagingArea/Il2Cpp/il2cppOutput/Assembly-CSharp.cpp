@@ -1978,6 +1978,15 @@ public:
 };
 
 
+// GPGSIds
+struct GPGSIds_tE10CFDC26A18093DA76E02C1503D3AE38EEA425C  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+
 // SmokeTest.GPGSIds
 struct GPGSIds_t675B6A4E062D71E290941F08CF32F6F176F5EAB0  : public RuntimeObject
 {
@@ -9832,10 +9841,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_mFEA7EFA1A6E75B96B1B7
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayGamesPlatform_t36A60BFBDB76D08A688B7EC6EB8C0FFA6986F58E * PlayGamesPlatform_get_Instance_mFD9A86E70DB559A9788DE546B2C9B4FE630BAB5E (const RuntimeMethod* method);
 // System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54 (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___x0, Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___y1, const RuntimeMethod* method);
-// UnityEngine.GameObject UnityEngine.Component::get_gameObject()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * Component_get_gameObject_m55DC35B149AFB9157582755383BA954655FE0C5B (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.Object::Destroy(UnityEngine.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_m3EEDB6ECD49A541EC826EA8E1C8B599F7AF67D30 (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___obj0, const RuntimeMethod* method);
 // System.Void System.Action`1<GoogleMobileAds.Api.InitializationStatus>::.ctor(System.Object,System.IntPtr)
 inline void Action_1__ctor_m6D67E0BED17154E031E194DC24D7381B6EF77F55 (Action_1_t73B690804B71062EA366B9EF731317DA6FE13907 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
@@ -9845,6 +9850,10 @@ inline void Action_1__ctor_m6D67E0BED17154E031E194DC24D7381B6EF77F55 (Action_1_t
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MobileAds_Initialize_m162D01EF10764A82B218C4D6496F71CF4F50529B (Action_1_t73B690804B71062EA366B9EF731317DA6FE13907 * ___initCompleteAction0, const RuntimeMethod* method);
 // System.Void AdManager::RequestBanner()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdManager_RequestBanner_m912724076033B6FFB933BA8C48C4FB0E94C387C5 (AdManager_tAAF35B6E920E54303B2EAC3F3096D40E666A6AF8 * __this, const RuntimeMethod* method);
+// System.Void AdManager::RequestInterstitial()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdManager_RequestInterstitial_m6B20BA5AC43907C6BA7724B25B570F6540E332B3 (AdManager_tAAF35B6E920E54303B2EAC3F3096D40E666A6AF8 * __this, const RuntimeMethod* method);
+// System.Void AdManager::RequestRewardAd()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdManager_RequestRewardAd_m110A85FB30010706955460FA82217E511281C397 (AdManager_tAAF35B6E920E54303B2EAC3F3096D40E666A6AF8 * __this, const RuntimeMethod* method);
 // System.Void GoogleMobileAds.Api.AdRequest/Builder::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Builder__ctor_m1737DCAE8B76039318B4AAEB15B5905C351605E2 (Builder_t127215BE9C4DAAE30F9535E425A34BDDFFADF7F4 * __this, const RuntimeMethod* method);
 // GoogleMobileAds.Api.AdRequest GoogleMobileAds.Api.AdRequest/Builder::Build()
@@ -9894,8 +9903,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardedAd_Show_m97EB3DC60C0273CF7F5A49E
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool InterstitialAd_IsLoaded_m539CECD9169FE98801CF14A6EDBCD9C0A26A4038_inline (InterstitialAd_t9ED58965C70F2CF9E66F92EAE19149A1A237E8C9 * __this, const RuntimeMethod* method);
 // System.Void GoogleMobileAds.Api.InterstitialAd::Show()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InterstitialAd_Show_m6111A6CEA42D17DDF9C6E3A2D8E6FC9E7C46EA28 (InterstitialAd_t9ED58965C70F2CF9E66F92EAE19149A1A237E8C9 * __this, const RuntimeMethod* method);
-// System.Void AdManager::RequestRewardAd()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdManager_RequestRewardAd_m110A85FB30010706955460FA82217E511281C397 (AdManager_tAAF35B6E920E54303B2EAC3F3096D40E666A6AF8 * __this, const RuntimeMethod* method);
 // UnityEngine.SocialPlatforms.ILocalUser UnityEngine.Social::get_localUser()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Social_get_localUser_m3C570106A10EE66C0172C291AE2084829B64C468 (const RuntimeMethod* method);
 // GooglePlayGames.BasicApi.LoadFriendsStatus GooglePlayGames.PlayGamesPlatform::GetLastLoadFriendsStatus()
@@ -9920,8 +9927,6 @@ inline void Action_1__ctor_m4C23C136A22A7FF18E6DC8B1274D51E48C786C99 (Action_1_t
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayGamesPlatform_AskForLoadFriendsResolution_m5F8F74FDE992D56638D7627119EB6B21DA0DF638 (PlayGamesPlatform_t36A60BFBDB76D08A688B7EC6EB8C0FFA6986F58E * __this, Action_1_tD3C28FECBD17FA9AB3E480CE1426804456996D5A * ___callback0, const RuntimeMethod* method);
 // System.Void GooglePlayGames.PlayGamesPlatform::ShowCompareProfileWithAlternativeNameHintsUI(System.String,System.String,System.String,System.Action`1<GooglePlayGames.BasicApi.UIStatus>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayGamesPlatform_ShowCompareProfileWithAlternativeNameHintsUI_m30C9ECC67B77CA674419A9F768D901EEB6D76077 (PlayGamesPlatform_t36A60BFBDB76D08A688B7EC6EB8C0FFA6986F58E * __this, String_t* ___userId0, String_t* ___otherPlayerInGameName1, String_t* ___currentPlayerInGameName2, Action_1_tD3C28FECBD17FA9AB3E480CE1426804456996D5A * ___callback3, const RuntimeMethod* method);
-// System.Void GooglePlayGames.PlayGamesPlatform::set_DebugLogEnabled(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayGamesPlatform_set_DebugLogEnabled_m2BFDD9004A757127E43D0C753E1CDF2271BDDADD (bool ___value0, const RuntimeMethod* method);
 // GooglePlayGames.PlayGamesPlatform GooglePlayGames.PlayGamesPlatform::Activate()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayGamesPlatform_t36A60BFBDB76D08A688B7EC6EB8C0FFA6986F58E * PlayGamesPlatform_Activate_m71AE35B28F18AC0D479F0E81263AAF91959A1A70 (const RuntimeMethod* method);
 // System.Void System.Action`1<GooglePlayGames.BasicApi.SignInStatus>::.ctor(System.Object,System.IntPtr)
@@ -10052,8 +10057,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt64_ToString_m3644686F0A0E32CB94
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IScoreU5BU5D_t9FEEC91A3D90CD5770DA4EFB8DFCF5340A279C5A* LeaderboardScoreData_get_Scores_m1C6059BF8B075C943DBFC3A5841E096D1F274BD7 (LeaderboardScoreData_t7946A6078C07768D37E222231A650A7D3DFFDDD0 * __this, const RuntimeMethod* method);
 // GooglePlayGames.BasicApi.ResponseStatus GooglePlayGames.BasicApi.LeaderboardScoreData::get_Status()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t LeaderboardScoreData_get_Status_m6E9F909E62DBD80DDB6FB349C130FCDFAC973696_inline (LeaderboardScoreData_t7946A6078C07768D37E222231A650A7D3DFFDDD0 * __this, const RuntimeMethod* method);
-// System.Void AdManager::RequestInterstitial()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdManager_RequestInterstitial_m6B20BA5AC43907C6BA7724B25B570F6540E332B3 (AdManager_tAAF35B6E920E54303B2EAC3F3096D40E666A6AF8 * __this, const RuntimeMethod* method);
 // System.Single UnityEngine.PlayerPrefs::GetFloat(System.String,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PlayerPrefs_GetFloat_mCF1F69BE283197090AB08158CD05995136A1EBCF (String_t* ___key0, float ___defaultValue1, const RuntimeMethod* method);
 // System.String System.Single::ToString()
@@ -10064,6 +10067,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Random_Range_m4B3A0037ACA057F33C94508
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdManager_ShowInterstitial_mE7E4C905B68921B8A558DFD064CB22A1BCD32C9B (AdManager_tAAF35B6E920E54303B2EAC3F3096D40E666A6AF8 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Screen::set_orientation(UnityEngine.ScreenOrientation)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Screen_set_orientation_mBEF7687B3C2B4726AE40F2BBB3568B1B131B6D1B (int32_t ___value0, const RuntimeMethod* method);
+// System.Void GooglePlayGames.PlayGamesPlatform::set_DebugLogEnabled(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayGamesPlatform_set_DebugLogEnabled_m2BFDD9004A757127E43D0C753E1CDF2271BDDADD (bool ___value0, const RuntimeMethod* method);
 // System.Void SmokeTest.NearbyGUI::.ctor(SmokeTest.MainGui)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NearbyGUI__ctor_mB96333E007C2A4745C7BFA3DB999845AEFF54F79 (NearbyGUI_t04F752DA3BD4D006C5B0E515F2908756CCDCED7E * __this, MainGui_tC8A60913D31CE439FA42DC4B9EE84E20A50586E0 * ___owner0, const RuntimeMethod* method);
 // System.Void SmokeTest.AchievementGUI::.ctor(SmokeTest.MainGui)
@@ -10518,6 +10523,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_Translate_m24A8CB13E2AAB0C17EE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * Collision2D_get_gameObject_m6F07B9CA1FAD187933EB6D8E44BD9F870658F89F (Collision2D_t95B5FD331CE95276D3658140844190B485D26564 * __this, const RuntimeMethod* method);
 // System.Boolean UnityEngine.GameObject::CompareTag(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameObject_CompareTag_mA692D8508984DBE4A2FEFD19E29CB1C9D5CDE001 (GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * __this, String_t* ___tag0, const RuntimeMethod* method);
+// UnityEngine.GameObject UnityEngine.Component::get_gameObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * Component_get_gameObject_m55DC35B149AFB9157582755383BA954655FE0C5B (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Object::Destroy(UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_m3EEDB6ECD49A541EC826EA8E1C8B599F7AF67D30 (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___obj0, const RuntimeMethod* method);
 // UnityEngine.Vector3 UnityEngine.Transform::get_position()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341 (Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * __this, const RuntimeMethod* method);
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.AudioSource>()
@@ -11856,11 +11865,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdManager_Awake_m70481558F6DCF89733E1FD9
 
 IL_0014:
 	{
-		// Destroy(gameObject);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2;
-		L_2 = Component_get_gameObject_m55DC35B149AFB9157582755383BA954655FE0C5B(__this, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		Object_Destroy_m3EEDB6ECD49A541EC826EA8E1C8B599F7AF67D30(L_2, /*hidden argument*/NULL);
 		// return;
 		return;
 	}
@@ -11906,6 +11910,10 @@ IL_001f:
 		MobileAds_Initialize_m162D01EF10764A82B218C4D6496F71CF4F50529B(G_B2_0, /*hidden argument*/NULL);
 		// this.RequestBanner();
 		AdManager_RequestBanner_m912724076033B6FFB933BA8C48C4FB0E94C387C5(__this, /*hidden argument*/NULL);
+		// this.RequestInterstitial();
+		AdManager_RequestInterstitial_m6B20BA5AC43907C6BA7724B25B570F6540E332B3(__this, /*hidden argument*/NULL);
+		// this.RequestRewardAd();
+		AdManager_RequestRewardAd_m110A85FB30010706955460FA82217E511281C397(__this, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -12770,6 +12778,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FriendsGUI_U3COnGUIU3Eb__3_1_mDC23D76A43
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void GPGSManager::Start()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GPGSManager_Start_mEBF209E000DCB607924BAA3E01EC9C84C867FE8E (GPGSManager_tC79D1D7D00800054BE7868D195B659733CF204A3 * __this, const RuntimeMethod* method)
 {
@@ -12783,10 +12799,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GPGSManager_Start_mEBF209E000DCB607924BA
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// PlayGamesPlatform.DebugLogEnabled = true;
-		IL2CPP_RUNTIME_CLASS_INIT(PlayGamesPlatform_t36A60BFBDB76D08A688B7EC6EB8C0FFA6986F58E_il2cpp_TypeInfo_var);
-		PlayGamesPlatform_set_DebugLogEnabled_m2BFDD9004A757127E43D0C753E1CDF2271BDDADD((bool)1, /*hidden argument*/NULL);
 		// PlayGamesPlatform.Activate();
+		IL2CPP_RUNTIME_CLASS_INIT(PlayGamesPlatform_t36A60BFBDB76D08A688B7EC6EB8C0FFA6986F58E_il2cpp_TypeInfo_var);
 		PlayGamesPlatform_t36A60BFBDB76D08A688B7EC6EB8C0FFA6986F58E * L_0;
 		L_0 = PlayGamesPlatform_Activate_m71AE35B28F18AC0D479F0E81263AAF91959A1A70(/*hidden argument*/NULL);
 		// PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);

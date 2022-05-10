@@ -692,24 +692,24 @@ static void GoogleMobileAds_Common_CustomAttributesCacheGenerator(CustomAttribut
 		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x47\x6F\x6F\x67\x6C\x65\x4D\x6F\x62\x69\x6C\x65\x41\x64\x73\x2E\x41\x6E\x64\x72\x6F\x69\x64"), NULL);
 	}
 	{
-		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[17];
-		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x47\x6F\x6F\x67\x6C\x65\x4D\x6F\x62\x69\x6C\x65\x41\x64\x73\x4E\x61\x74\x69\x76\x65"), NULL);
-	}
-	{
-		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[18];
-		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x47\x6F\x6F\x67\x6C\x65\x4D\x6F\x62\x69\x6C\x65\x41\x64\x73\x4E\x61\x74\x69\x76\x65\x2E\x41\x6E\x64\x72\x6F\x69\x64"), NULL);
-	}
-	{
-		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[19];
-		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x47\x6F\x6F\x67\x6C\x65\x4D\x6F\x62\x69\x6C\x65\x41\x64\x73\x4E\x61\x74\x69\x76\x65\x2E\x69\x4F\x53"), NULL);
-	}
-	{
-		AssemblyConfigurationAttribute_t071B324A83314FBA14A43F37BE7206C420218B7C * tmp = (AssemblyConfigurationAttribute_t071B324A83314FBA14A43F37BE7206C420218B7C *)cache->attributes[20];
+		AssemblyConfigurationAttribute_t071B324A83314FBA14A43F37BE7206C420218B7C * tmp = (AssemblyConfigurationAttribute_t071B324A83314FBA14A43F37BE7206C420218B7C *)cache->attributes[17];
 		AssemblyConfigurationAttribute__ctor_m6EE76F5A155EDEA71967A32F78D777038ADD0757(tmp, il2cpp_codegen_string_new_wrapper(""), NULL);
 	}
 	{
-		AssemblyDescriptionAttribute_tF4460CCB289F6E2F71841792BBC7E6907DF612B3 * tmp = (AssemblyDescriptionAttribute_tF4460CCB289F6E2F71841792BBC7E6907DF612B3 *)cache->attributes[21];
+		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[18];
+		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x47\x6F\x6F\x67\x6C\x65\x4D\x6F\x62\x69\x6C\x65\x41\x64\x73\x4E\x61\x74\x69\x76\x65\x2E\x69\x4F\x53"), NULL);
+	}
+	{
+		AssemblyDescriptionAttribute_tF4460CCB289F6E2F71841792BBC7E6907DF612B3 * tmp = (AssemblyDescriptionAttribute_tF4460CCB289F6E2F71841792BBC7E6907DF612B3 *)cache->attributes[19];
 		AssemblyDescriptionAttribute__ctor_m3A0BD500FF352A67235FBA499FBA58EFF15B1F25(tmp, il2cpp_codegen_string_new_wrapper(""), NULL);
+	}
+	{
+		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[20];
+		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x47\x6F\x6F\x67\x6C\x65\x4D\x6F\x62\x69\x6C\x65\x41\x64\x73\x4E\x61\x74\x69\x76\x65"), NULL);
+	}
+	{
+		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[21];
+		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x47\x6F\x6F\x67\x6C\x65\x4D\x6F\x62\x69\x6C\x65\x41\x64\x73\x4E\x61\x74\x69\x76\x65\x2E\x41\x6E\x64\x72\x6F\x69\x64"), NULL);
 	}
 }
 static void AdErrorClientEventArgs_t0C75638F05564CEB6F10C020690922CB780799AA_CustomAttributesCacheGenerator_U3CAdErrorClientU3Ek__BackingField(CustomAttributesCache* cache)
@@ -746,6 +746,13 @@ static void AdInspectorErrorClientEventArgs_t988E26FAD5484274C0ADF999C6B3891EB3F
 	{
 		DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 * tmp = (DebuggerBrowsableAttribute_t2FA4793AD1982F5150E07D26822ED5953CD90F53 *)cache->attributes[1];
 		DebuggerBrowsableAttribute__ctor_mAA8BCC1E418754685F320B14A08AC226E76346E5(tmp, 0LL, NULL);
+	}
+}
+static void AdInspectorErrorClientEventArgs_t988E26FAD5484274C0ADF999C6B3891EB3F96456_CustomAttributesCacheGenerator_AdInspectorErrorClientEventArgs_get_AdErrorClient_mF6499FC20C3CB33BDBEF21AC53AD64E859B0AA7B(CustomAttributesCache* cache)
+{
+	{
+		CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C * tmp = (CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m9DC3E4E2DA76FE93948D44199213E2E924DCBE35(tmp, NULL);
 	}
 }
 static void AdInspectorErrorClientEventArgs_t988E26FAD5484274C0ADF999C6B3891EB3F96456_CustomAttributesCacheGenerator_AdInspectorErrorClientEventArgs_set_AdErrorClient_m38C99C63827A2793D4ADD5490DFC51377F200A45(CustomAttributesCache* cache)
@@ -788,7 +795,7 @@ static void U3CInvokeInUpdateU3Ec__AnonStorey0_t65E2ED9EAB6305FE0EEB9223E5A76C27
 	}
 }
 IL2CPP_EXTERN_C const CustomAttributesCacheGenerator g_GoogleMobileAds_Common_AttributeGenerators[];
-const CustomAttributesCacheGenerator g_GoogleMobileAds_Common_AttributeGenerators[10] = 
+const CustomAttributesCacheGenerator g_GoogleMobileAds_Common_AttributeGenerators[11] = 
 {
 	U3CInvokeInUpdateU3Ec__AnonStorey0_t65E2ED9EAB6305FE0EEB9223E5A76C27EAE0C1A8_CustomAttributesCacheGenerator,
 	AdErrorClientEventArgs_t0C75638F05564CEB6F10C020690922CB780799AA_CustomAttributesCacheGenerator_U3CAdErrorClientU3Ek__BackingField,
@@ -796,6 +803,7 @@ const CustomAttributesCacheGenerator g_GoogleMobileAds_Common_AttributeGenerator
 	LoadAdErrorClientEventArgs_t2523826CBA4586B4B71D0D7D6F1BD5A87E483E6D_CustomAttributesCacheGenerator_U3CLoadAdErrorClientU3Ek__BackingField,
 	AdErrorClientEventArgs_t0C75638F05564CEB6F10C020690922CB780799AA_CustomAttributesCacheGenerator_AdErrorClientEventArgs_get_AdErrorClient_mDB6410FAA0805F3CE19669BBD6A9160AF63F41E6,
 	AdErrorClientEventArgs_t0C75638F05564CEB6F10C020690922CB780799AA_CustomAttributesCacheGenerator_AdErrorClientEventArgs_set_AdErrorClient_m0160343490D191BD29832AF967AB440F5A01EF35,
+	AdInspectorErrorClientEventArgs_t988E26FAD5484274C0ADF999C6B3891EB3F96456_CustomAttributesCacheGenerator_AdInspectorErrorClientEventArgs_get_AdErrorClient_mF6499FC20C3CB33BDBEF21AC53AD64E859B0AA7B,
 	AdInspectorErrorClientEventArgs_t988E26FAD5484274C0ADF999C6B3891EB3F96456_CustomAttributesCacheGenerator_AdInspectorErrorClientEventArgs_set_AdErrorClient_m38C99C63827A2793D4ADD5490DFC51377F200A45,
 	LoadAdErrorClientEventArgs_t2523826CBA4586B4B71D0D7D6F1BD5A87E483E6D_CustomAttributesCacheGenerator_LoadAdErrorClientEventArgs_get_LoadAdErrorClient_mFDA34CA21B56474D3CDC9B9435349B7B488F6E6C,
 	LoadAdErrorClientEventArgs_t2523826CBA4586B4B71D0D7D6F1BD5A87E483E6D_CustomAttributesCacheGenerator_LoadAdErrorClientEventArgs_set_LoadAdErrorClient_m50985CA913430BB2DC762DBCFB3E072F4B298CE1,

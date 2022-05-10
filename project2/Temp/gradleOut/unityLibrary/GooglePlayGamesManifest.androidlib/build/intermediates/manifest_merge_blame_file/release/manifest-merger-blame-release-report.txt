@@ -36,11 +36,11 @@
 23
 24        <!-- Required for Nearby Connections API -->
 25        <meta-data
-25-->C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:20:14-21:57
+25-->C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:20:14-21:58
 26            android:name="com.google.android.gms.nearby.connection.SERVICE_ID"
 26-->C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:20:25-91
-27            android:value="com.Boxjump.Boxjump" />
-27-->C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:21:19-54
+27            android:value="com.Boxjump.Boxjump2" />
+27-->C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:21:19-55
 28
 29        <!-- The space in these forces it to be interpreted as a string vs. int -->
 30        <meta-data

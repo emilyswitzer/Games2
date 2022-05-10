@@ -5,7 +5,6 @@ ScriptsOnlyBuild:
     - AdManager
     - GPGSManager
     - Generator
-    - Leaderboard
     - LosingMenuController
     - MenuController
     - Obstacle
@@ -16,6 +15,8 @@ ScriptsOnlyBuild:
     - UnityAdManager
     - UnityBanner
     - UnityInterstitialAd
+    GoogleMobileAds.Common.dll:
+    - GoogleMobileAds.Common.MobileAdsEventExecutor
     GoogleMobileAds.Editor.dll:
     - GoogleMobileAds.Editor.GoogleMobileAdsSettings
     Unity.2D.Animation.Editor.dll:
@@ -37,6 +38,9 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.Advertisements.dll:
+    - UnityEngine.Advertisements.Placeholder
+    - UnityEngine.Advertisements.Platform.Editor.BannerPlaceholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -66,23 +70,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1624}
     - Class: 114
-      Script: {instanceID: 2532}
+      Script: {instanceID: 2530}
     - Class: 114
-      Script: {instanceID: 3008}
+      Script: {instanceID: 3006}
     - Class: 114
-      Script: {instanceID: 3198}
+      Script: {instanceID: 3196}
     - Class: 114
-      Script: {instanceID: 3472}
+      Script: {instanceID: 3470}
     - Class: 114
-      Script: {instanceID: 3506}
+      Script: {instanceID: 3742}
     - Class: 114
-      Script: {instanceID: 3744}
-    - Class: 114
-      Script: {instanceID: 3888}
-    - Class: 114
-      Script: {instanceID: 4256}
-    - Class: 114
-      Script: {instanceID: 5306}
+      Script: {instanceID: 3886}
     - Class: 114
       Script: {instanceID: 5702}
     - Class: 115
@@ -135,27 +133,29 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1698}
+      Script: {instanceID: 1696}
     - Class: 114
-      Script: {instanceID: 2144}
+      Script: {instanceID: 2142}
     - Class: 114
-      Script: {instanceID: 2202}
+      Script: {instanceID: 2200}
     - Class: 114
-      Script: {instanceID: 2532}
+      Script: {instanceID: 2530}
     - Class: 114
-      Script: {instanceID: 2616}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 3008}
+      Script: {instanceID: 3006}
     - Class: 114
-      Script: {instanceID: 3198}
+      Script: {instanceID: 3196}
     - Class: 114
-      Script: {instanceID: 3446}
+      Script: {instanceID: 3444}
     - Class: 114
-      Script: {instanceID: 3472}
+      Script: {instanceID: 3470}
     - Class: 114
-      Script: {instanceID: 3598}
+      Script: {instanceID: 3504}
     - Class: 114
-      Script: {instanceID: 3744}
+      Script: {instanceID: 3596}
+    - Class: 114
+      Script: {instanceID: 3742}
     - Class: 114
       Script: {instanceID: 4256}
     - Class: 114
@@ -202,29 +202,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1624}
     - Class: 114
-      Script: {instanceID: 2532}
+      Script: {instanceID: 2530}
     - Class: 114
-      Script: {instanceID: 3008}
+      Script: {instanceID: 3006}
     - Class: 114
-      Script: {instanceID: 3058}
+      Script: {instanceID: 3196}
     - Class: 114
-      Script: {instanceID: 3198}
+      Script: {instanceID: 3318}
     - Class: 114
-      Script: {instanceID: 3320}
+      Script: {instanceID: 3470}
     - Class: 114
-      Script: {instanceID: 3472}
+      Script: {instanceID: 3742}
     - Class: 114
-      Script: {instanceID: 3506}
-    - Class: 114
-      Script: {instanceID: 3744}
-    - Class: 114
-      Script: {instanceID: 3888}
-    - Class: 114
-      Script: {instanceID: 4256}
+      Script: {instanceID: 3886}
     - Class: 114
       Script: {instanceID: 4774}
-    - Class: 114
-      Script: {instanceID: 5306}
     - Class: 114
       Script: {instanceID: 5546}
     - Class: 114
@@ -935,4 +927,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/GameScene.unity
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/DeathScreen.unity
-  playerPath: C:/Users/HP/Desktop/game/project2/build11.aab
+  playerPath: C:/Users/HP/Desktop/game/project2/build13.aab

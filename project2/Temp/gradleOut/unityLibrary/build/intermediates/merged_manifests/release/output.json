@@ -10,8 +10,8 @@
       "apkData": {
         "type": "MAIN",
         "splits": [],
-        "versionCode": 9,
-        "versionName": "9",
+        "versionCode": 10,
+        "versionName": "10",
         "outputFile": "unityLibrary-release.aar",
         "fullName": "release",
         "baseName": "release",

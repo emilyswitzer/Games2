@@ -19,7 +19,7 @@ public class AdManager : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
             return;
         }
     }
@@ -30,8 +30,8 @@ public class AdManager : MonoBehaviour
         MobileAds.Initialize(InititizationStatus => { });
      
         this.RequestBanner();
-    //    this.RequestInterstitial();
-      //  this.RequestRewardAd();
+        this.RequestInterstitial();
+         this.RequestRewardAd();
 
     }
 

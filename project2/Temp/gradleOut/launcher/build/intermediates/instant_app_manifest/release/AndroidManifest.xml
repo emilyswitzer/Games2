@@ -4,8 +4,8 @@
     package="com.Boxjump.Boxjump2"
     android:installLocation="preferExternal"
     android:targetSandboxVersion="2"
-    android:versionCode="9"
-    android:versionName="9" >
+    android:versionCode="10"
+    android:versionName="10" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -101,7 +101,7 @@
             android:value="portrait|landscape" />
         <meta-data
             android:name="unity.build-id"
-            android:value="a0a8511f-efe0-4481-b5f6-a42bd1e893d6" />
+            android:value="ffc33f03-93e1-4717-8f13-211612d18992" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"
@@ -291,7 +291,7 @@
             android:value="true" /> <!-- Required for Nearby Connections API -->
         <meta-data
             android:name="com.google.android.gms.nearby.connection.SERVICE_ID"
-            android:value="com.Boxjump.Boxjump" /> <!-- The space in these forces it to be interpreted as a string vs. int -->
+            android:value="com.Boxjump.Boxjump2" /> <!-- The space in these forces it to be interpreted as a string vs. int -->
         <meta-data
             android:name="com.google.android.gms.games.APP_ID"
             android:value="\u003324041806730" /> <!-- Keep track of which plugin is being used -->

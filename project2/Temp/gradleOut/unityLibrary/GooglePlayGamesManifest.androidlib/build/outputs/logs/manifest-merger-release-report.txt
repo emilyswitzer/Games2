@@ -44,9 +44,9 @@ ADDED from C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\GoogleP
 application
 ADDED from C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:17:5-34:19
 meta-data#com.google.android.gms.nearby.connection.SERVICE_ID
-ADDED from C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:20:14-21:57
+ADDED from C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:20:14-21:58
 	android:value
-		ADDED from C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:21:19-54
+		ADDED from C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:21:19-55
 	android:name
 		ADDED from C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:20:25-91
 meta-data#com.google.android.gms.games.APP_ID

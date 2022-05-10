@@ -14,14 +14,13 @@ public class GPGSManager : MonoBehaviour
     void Start()
     {
 
-        PlayGamesPlatform.DebugLogEnabled = true;
-       
+       // PlayGamesPlatform.DebugLogEnabled = true;
         PlayGamesPlatform.Activate();
         PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
        
     }
 
-    public void ProcessAuthentication(SignInStatus status)
+    internal void ProcessAuthentication(SignInStatus status)
     {
         if (status == SignInStatus.Success)
         {
@@ -30,6 +29,7 @@ public class GPGSManager : MonoBehaviour
         }
         else
         {
+
             
             statusText.text = "Failed to authenticate";
          //   desc.text = "Failed to authenticate because " + status;
