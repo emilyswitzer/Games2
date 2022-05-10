@@ -69,7 +69,6 @@
     <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\BasicApi\SignInStatus.cs" />
     <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\BasicApi\Achievement.cs" />
     <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\Platforms\Android\AndroidJavaConverter.cs" />
-    <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\BasicApi\PlayerProfile.cs" />
     <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\Platforms\Android\AndroidTaskUtils.cs" />
     <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\BasicApi\Nearby\DummyNearbyConnectionClient.cs" />
     <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\Platforms\PlayGamesClientFactory.cs" />
@@ -101,9 +100,19 @@
     <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\BasicApi\Nearby\NearbyConnectionConfiguration.cs" />
     <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\Platforms\NearbyConnectionClientFactory.cs" />
     <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\Platforms\Android\AndroidClient.cs" />
-    <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\BasicApi\Player.cs" />
     <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\ISocialPlatform\PlayGamesUserProfile.cs" />
     <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\BasicApi\Nearby\EndpointDetails.cs" />
+    <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\BasicApi\Player.cs" />
+    <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\BasicApi\Video\VideoCapabilities.cs" />
+    <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\Platforms\Android\AndroidVideoClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\Platforms\TokenClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\BasicApi\Video\CaptureOverlayStateListener.cs" />
+    <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\BasicApi\PlayGamesClientConfiguration.cs" />
+    <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\BasicApi\Video\IVideoClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\BasicApi\SignInHelper.cs" />
+    <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\Platforms\Android\AndroidTokenClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\BasicApi\PlayerProfile.cs" />
+    <Compile Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Scripts\BasicApi\Video\VideoCaptureState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GooglePlayGames\com.google.play.games\Runtime\Google.Play.Games.asmdef" />
@@ -723,13 +732,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{DC80A2AF-293C-C81F-8E4D-F64A38FAED1B}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{5EB80730-CC7A-715C-6FF0-53AB3A3B30FF}</Project>
       <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{DC80A2AF-293C-C81F-8E4D-F64A38FAED1B}</Project>
+      <Name>UnityEditor.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

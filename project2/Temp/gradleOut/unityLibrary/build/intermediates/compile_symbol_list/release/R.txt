@@ -8,6 +8,13 @@ int anim abc_slide_in_bottom 0x0
 int anim abc_slide_in_top 0x0
 int anim abc_slide_out_bottom 0x0
 int anim abc_slide_out_top 0x0
+int anim fragment_close_enter 0x0
+int anim fragment_close_exit 0x0
+int anim fragment_fade_enter 0x0
+int anim fragment_fade_exit 0x0
+int anim fragment_fast_out_extra_slow_in 0x0
+int anim fragment_open_enter 0x0
+int anim fragment_open_exit 0x0
 int anim tooltip_enter 0x0
 int anim tooltip_exit 0x0
 int attr actionBarDivider 0x0
@@ -121,6 +128,7 @@ int attr dividerPadding 0x0
 int attr dividerVertical 0x0
 int attr drawableSize 0x0
 int attr drawerArrowStyle 0x0
+int attr drawerLayoutStyle 0x0
 int attr dropDownListViewStyle 0x0
 int attr dropdownListPreferredItemHeight 0x0
 int attr editTextBackground 0x0
@@ -234,6 +242,7 @@ int attr subtitleTextAppearance 0x0
 int attr subtitleTextColor 0x0
 int attr subtitleTextStyle 0x0
 int attr suggestionRowLayout 0x0
+int attr swipeRefreshLayoutProgressSpinnerBackgroundColor 0x0
 int attr switchMinWidth 0x0
 int attr switchPadding 0x0
 int attr switchStyle 0x0
@@ -482,6 +491,7 @@ int dimen compat_button_padding_vertical_material 0x0
 int dimen compat_control_corner_material 0x0
 int dimen compat_notification_large_icon_max_height 0x0
 int dimen compat_notification_large_icon_max_width 0x0
+int dimen def_drawer_elevation 0x0
 int dimen disabled_alpha_material_dark 0x0
 int dimen disabled_alpha_material_light 0x0
 int dimen highlight_alpha_material_colored 0x0
@@ -695,6 +705,7 @@ int id add 0x0
 int id adjust_height 0x0
 int id adjust_width 0x0
 int id alertTitle 0x0
+int id all 0x0
 int id async 0x0
 int id auto 0x0
 int id blocking 0x0
@@ -706,8 +717,13 @@ int id browser_actions_menu_items 0x0
 int id browser_actions_menu_view 0x0
 int id buttonPanel 0x0
 int id cancel_action 0x0
+int id center 0x0
+int id center_horizontal 0x0
+int id center_vertical 0x0
 int id checkbox 0x0
 int id chronometer 0x0
+int id clip_horizontal 0x0
+int id clip_vertical 0x0
 int id contentPanel 0x0
 int id custom 0x0
 int id customPanel 0x0
@@ -720,7 +736,11 @@ int id end 0x0
 int id end_padder 0x0
 int id expand_activities_button 0x0
 int id expanded_menu 0x0
+int id fill 0x0
+int id fill_horizontal 0x0
+int id fill_vertical 0x0
 int id forever 0x0
+int id fragment_container_view_tag 0x0
 int id home 0x0
 int id icon 0x0
 int id icon_group 0x0
@@ -735,6 +755,7 @@ int id line3 0x0
 int id listMode 0x0
 int id list_item 0x0
 int id media_actions 0x0
+int id media_controller_compat_view_tag 0x0
 int id message 0x0
 int id multiply 0x0
 int id none 0x0
@@ -766,6 +787,7 @@ int id search_voice_btn 0x0
 int id select_dialog_listview 0x0
 int id shortcut 0x0
 int id spacer 0x0
+int id special_effects_controller_view_tag 0x0
 int id split_action_bar 0x0
 int id src_atop 0x0
 int id src_in 0x0
@@ -801,6 +823,10 @@ int id top 0x0
 int id topPanel 0x0
 int id uniform 0x0
 int id up 0x0
+int id view_tree_lifecycle_owner 0x0
+int id view_tree_saved_state_registry_owner 0x0
+int id view_tree_view_model_store_owner 0x0
+int id visible_removing_fragment_view_tag 0x0
 int id wide 0x0
 int id wrap_content 0x0
 int integer abc_config_activityDefaultDur 0x0
@@ -923,7 +949,6 @@ int string offline_opt_in_confirmation 0x0
 int string offline_opt_in_decline 0x0
 int string offline_opt_in_message 0x0
 int string offline_opt_in_title 0x0
-int string play_games_sdk_version 0x0
 int string s1 0x0
 int string s2 0x0
 int string s3 0x0
@@ -1226,7 +1251,6 @@ int style Theme_AppCompat_Light_Dialog_Alert 0x0
 int style Theme_AppCompat_Light_Dialog_MinWidth 0x0
 int style Theme_AppCompat_Light_NoActionBar 0x0
 int style Theme_AppCompat_NoActionBar 0x0
-int style Theme_Games_Transparent 0x0
 int style Theme_IAPTheme 0x0
 int style UnityThemeSelector 0x0
 int style UnityThemeSelector_Translucent 0x0
@@ -1541,6 +1565,8 @@ int styleable DrawerArrowToggle_drawableSize 4
 int styleable DrawerArrowToggle_gapBetweenBars 5
 int styleable DrawerArrowToggle_spinBars 6
 int styleable DrawerArrowToggle_thickness 7
+int[] styleable DrawerLayout { 0x0 }
+int styleable DrawerLayout_elevation 0
 int[] styleable FontFamily { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
 int styleable FontFamily_fontProviderAuthority 0
 int styleable FontFamily_fontProviderCerts 1
@@ -1560,6 +1586,13 @@ int styleable FontFamilyFont_fontStyle 6
 int styleable FontFamilyFont_fontVariationSettings 7
 int styleable FontFamilyFont_fontWeight 8
 int styleable FontFamilyFont_ttcIndex 9
+int[] styleable Fragment { 0x10100d0, 0x1010003, 0x10100d1 }
+int styleable Fragment_android_id 0
+int styleable Fragment_android_name 1
+int styleable Fragment_android_tag 2
+int[] styleable FragmentContainerView { 0x1010003, 0x10100d1 }
+int styleable FragmentContainerView_android_name 0
+int styleable FragmentContainerView_android_tag 1
 int[] styleable GradientColor { 0x101020b, 0x10101a2, 0x10101a3, 0x101019e, 0x1010512, 0x1010513, 0x10101a4, 0x101019d, 0x1010510, 0x1010511, 0x1010201, 0x10101a1 }
 int styleable GradientColor_android_centerColor 0
 int styleable GradientColor_android_centerX 1
@@ -1676,6 +1709,8 @@ int styleable Spinner_android_entries 1
 int styleable Spinner_android_popupBackground 2
 int styleable Spinner_android_prompt 3
 int styleable Spinner_popupTheme 4
+int[] styleable SwipeRefreshLayout { 0x0 }
+int styleable SwipeRefreshLayout_swipeRefreshLayoutProgressSpinnerBackgroundColor 0
 int[] styleable SwitchCompat { 0x1010125, 0x1010124, 0x1010142, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
 int styleable SwitchCompat_android_textOff 0
 int styleable SwitchCompat_android_textOn 1

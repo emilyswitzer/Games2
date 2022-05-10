@@ -19,8 +19,8 @@ public class AdManager : MonoBehaviour
         }
         else
         {
-            //Destroy(gameObject);
-            return;
+           Destroy(gameObject);
+           return;
         }
     }
 
@@ -41,14 +41,14 @@ public class AdManager : MonoBehaviour
     }
     private void RequestBanner()
     {
-        string adUnitID = "ca-app-pub-9403107411698091/2307606128";
+        string adUnitID = "ca-app-pub-3940256099942544/6300978111";
         this.bannerAd = new BannerView(adUnitID, AdSize.SmartBanner, AdPosition.Bottom);
      
         this.bannerAd.LoadAd(CreateAdRequest());
     }
     public void RequestInterstitial()
     {
-        string adUnitID = "ca-app-pub-9403107411698091/3983935280";
+        string adUnitID = "ca-app-pub-3940256099942544/1033173712";
         if(this.interstitial != null)
         {
             this.interstitial.Destroy();
@@ -61,7 +61,7 @@ public class AdManager : MonoBehaviour
 
     public void RequestRewardAd()
     {
-        rewardedAd = new RewardedAd("ca-app-pub-9403107411698091/3607658626");
+        rewardedAd = new RewardedAd("ca-app-pub-3940256099942544/5224354917");
         rewardedAd.OnUserEarnedReward += HandleUserEarnedReward;
         rewardedAd.OnAdClosed += HandleRewardedAdClosed;
         rewardedAd.OnAdFailedToShow += HandleRewardedAdFailedToShow;
@@ -77,13 +77,18 @@ public class AdManager : MonoBehaviour
         {
             rewardedAd.Show();
         }
+        else
+            RequestRewardAd();
     }
 
     public void ShowInterstitial()
     {
-        if (this.interstitial.IsLoaded()){
+        if (this.interstitial.IsLoaded())
+        {
             interstitial.Show();
         }
+        else
+            RequestInterstitial();
       
     }
 
@@ -94,16 +99,16 @@ public class AdManager : MonoBehaviour
 
     public void HandleRewardedAdClosed(object sender, EventArgs args)
     {
-        RequestRewardAd();
+       // RequestRewardAd();
     }
     public void HandleUserEarnedReward(object sender, Reward args)
     {
-        RequestRewardAd();
+     //   RequestRewardAd();
     }
 
     // Update is called once per frame
     void Update()
     {
-        RequestRewardAd();
+       // RequestRewardAd();
     }
 }

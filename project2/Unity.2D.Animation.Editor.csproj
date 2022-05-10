@@ -910,13 +910,13 @@
       <Project>{A328E5D8-6A8D-D448-1693-86C5C123D9AD}</Project>
       <Name>Unity.2D.Sprite.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{DC80A2AF-293C-C81F-8E4D-F64A38FAED1B}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{5EB80730-CC7A-715C-6FF0-53AB3A3B30FF}</Project>
       <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{DC80A2AF-293C-C81F-8E4D-F64A38FAED1B}</Project>
+      <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
       <Project>{75B5346E-42C3-B529-2FB5-1F91239D439B}</Project>

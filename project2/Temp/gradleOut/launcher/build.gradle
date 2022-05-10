@@ -22,8 +22,8 @@ android {
         ndk {
             abiFilters 'armeabi-v7a', 'arm64-v8a'
         }
-        versionCode 10
-        versionName '10'
+        versionCode 12
+        versionName '12'
     }
 
     aaptOptions {

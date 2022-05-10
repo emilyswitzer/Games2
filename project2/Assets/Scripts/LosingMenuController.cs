@@ -16,7 +16,8 @@ public class LosingMenuController : MonoBehaviour
 
     private void Start()
     {
-        AdManager.instance.RequestInterstitial();
+       // AdManager.instance.RequestInterstitial();
+        AdManager.instance.ShowInterstitial();
         currenthighscore = PlayerPrefs.GetFloat("HighScore", 0f);
         highscore.text = "Highscore: " + Mathf.Round(currenthighscore);
         //PlayGames.getLeaderboardsClient(this).submitScore(getString(R.string.leaderboard_id), currenthighscore);
@@ -37,10 +38,10 @@ public class LosingMenuController : MonoBehaviour
 
     private void Update()
     {
-        if (Random.Range(0, 3) == 0)
+   /*     if (Random.Range(0, 3) == 0)
         {
             AdManager.instance.ShowInterstitial();
-        }
+        }*/
     }
 
 

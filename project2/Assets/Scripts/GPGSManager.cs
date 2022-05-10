@@ -1,83 +1,70 @@
-using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using GooglePlayGames.BasicApi;
 using GooglePlayGames;
-
+using System;
+using UnityEngine.SocialPlatforms;
 
 
 public class GPGSManager : MonoBehaviour
 {
-    public Text statusText;
-    public Text desc;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-       // PlayGamesPlatform.DebugLogEnabled = true;
+    public Text m_Message;
+    public Button m_SignIn;
+
+
+    private void Start()
+    {
+        PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
+    .RequestIdToken()
+    .RequestServerAuthCode(false)
+    .Build();
+        PlayGamesPlatform.InitializeInstance(config);
+        PlayGamesPlatform.DebugLogEnabled = true;
         PlayGamesPlatform.Activate();
-        PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
-       
+
+        m_SignIn.onClick.RemoveAllListeners();
+
+        m_SignIn.onClick.AddListener(SignInGooglePlayGames);
+
+        SignInGooglePlayGames();
     }
 
-    internal void ProcessAuthentication(SignInStatus status)
+
+
+    public void SignInGooglePlayGames()
     {
-        if (status == SignInStatus.Success)
-        {
-            statusText.text = "Successfully authenticated";
-            desc.text = "Hello " + Social.localUser.userName + ". Your I.D. is " + Social.localUser.id;
-        }
-        else
-        {
+        string playerName = string.Empty;
 
-            
-            statusText.text = "Failed to authenticate";
-         //   desc.text = "Failed to authenticate because " + status;
-        }
+
+
+        PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptAlways, (result) =>
+        {
+            if (result == SignInStatus.Success)
+            {
+
+                playerName = PlayGamesPlatform.Instance.GetUserDisplayName();
+            }
+
+            else m_Message.text = "Login " + result.ToString() + " " + playerName;
+
+            m_SignIn.onClick.AddListener(SignoutGooglePlay);
+        });
     }
+
+    private void SignoutGooglePlay()
+    {
+        PlayGamesPlatform.Instance.SignOut();
+        m_Message.text = "User Signed Out";
+        SignInGooglePlayGames();
+    }
+
     public void ShowLeaderboard()
     {
-        if (PlayGamesPlatform.Instance.localUser.authenticated)
-        {
-            PlayGamesPlatform.Instance.ShowLeaderboardUI();
-        }
-        else
-        {
-
-            Social.ShowLeaderboardUI();
-        }
-    }
-
-    
-    public void ShowLeaderBoardCall(Boolean success)
-    {
-        if (success)
-        {
-            Social.ShowLeaderboardUI();
-        }
-    }
-
-    public void PostToLeaderBoard(long score)
-    {
-        if (PlayGamesPlatform.Instance.localUser.authenticated)
-        {
-            Social.ReportScore(score, "CgkIiqeWk7cJEAIQBQ", (bool success) => {
-                Debug.Log("Success");
-            });
-        }
-        else
-        {
-            Debug.Log("Not posted");
-        }
+        Social.ShowLeaderboardUI();
     }
 
 
-    public void ShowAcheivments()
-    {
-        if (PlayGamesPlatform.Instance.localUser.authenticated)
-        {
-            Social.ShowAchievementsUI();
-        }
-        
-    }
 }

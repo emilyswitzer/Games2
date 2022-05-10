@@ -81,7 +81,7 @@ namespace SmokeTest
 
             PlayGamesPlatform.DebugLogEnabled = true;
             PlayGamesPlatform.Activate();
-            PlayGamesPlatform.Instance.Authenticate(OnSignInResult);
+         //   PlayGamesPlatform.Instance.Authenticate(OnSignInResult);
             this.mNearbyGui = new NearbyGUI(this);
             this.mAchievementGui = new AchievementGUI(this);
             this.mLeaderboardGui = new LeaderboardGUI(this);
@@ -572,8 +572,8 @@ namespace SmokeTest
 
             if (GUI.Button(CalcGrid(0, 8), "Request Server Side Access"))
             {
-                PlayGamesPlatform.Instance.RequestServerSideAccess(/* forceRefreshToken= */ false,
-                    authCode => mAuthCode = authCode);
+              //  PlayGamesPlatform.Instance.RequestServerSideAccess(/* forceRefreshToken= */ false,
+                 //   authCode => mAuthCode = authCode);
             }
             else if (GUI.Button(CalcGrid(1, 8), "Back"))
             {
@@ -696,7 +696,7 @@ namespace SmokeTest
         {
             SetStandBy("Authenticating...");
             PlayGamesPlatform.Activate();
-            PlayGamesPlatform.Instance.ManuallyAuthenticate(OnSignInResult);
+         //   PlayGamesPlatform.Instance.ManuallyAuthenticate(OnSignInResult);
         }
 
         private void OnSignInResult(SignInStatus signInStatus)

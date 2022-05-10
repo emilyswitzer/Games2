@@ -4,8 +4,8 @@
     package="com.Boxjump.Boxjump2"
     android:installLocation="preferExternal"
     android:targetSandboxVersion="2"
-    android:versionCode="10"
-    android:versionName="10" >
+    android:versionCode="12"
+    android:versionName="12" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -21,6 +21,7 @@
     <uses-feature android:glEsVersion="0x00020000" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <uses-feature
         android:name="android.hardware.touchscreen"
@@ -33,7 +34,6 @@
         android:required="false" />
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="com.google.android.gms.permission.AD_ID" /> <!-- Android package visibility setting -->
@@ -101,7 +101,7 @@
             android:value="portrait|landscape" />
         <meta-data
             android:name="unity.build-id"
-            android:value="ffc33f03-93e1-4717-8f13-211612d18992" />
+            android:value="b01ed60b-fe57-44bd-a894-41a91d34ac64" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"
@@ -226,6 +226,21 @@
             android:exported="false" />
 
         <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:visibleToInstantApps="true" />
+
+        <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
@@ -233,21 +248,6 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
-        <provider
-            android:name="com.google.android.gms.games.provider.PlayGamesInitProvider"
-            android:authorities="com.Boxjump.Boxjump2.playgamesinitprovider"
-            android:exported="false"
-            android:initOrder="99" />
-
-        <activity
-            android:name="com.google.android.gms.games.internal.v2.resolution.GamesResolutionActivity"
-            android:exported="false"
-            android:theme="@style/Theme.Games.Transparent" />
-
-        <meta-data
-            android:name="com.google.android.gms.games.version"
-            android:value="@string/play_games_sdk_version" />
 
         <activity
             android:name="com.google.games.bridge.GenericResolutionActivity"
@@ -285,10 +285,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-9403107411698091~7774134341" />
-        <meta-data
-            android:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT"
-            android:value="true" /> <!-- Required for Nearby Connections API -->
+            android:value="ca-app-pub-9403107411698091~7774134341" /> <!-- Required for Nearby Connections API -->
         <meta-data
             android:name="com.google.android.gms.nearby.connection.SERVICE_ID"
             android:value="com.Boxjump.Boxjump2" /> <!-- The space in these forces it to be interpreted as a string vs. int -->
@@ -297,7 +294,7 @@
             android:value="\u003324041806730" /> <!-- Keep track of which plugin is being used -->
         <meta-data
             android:name="com.google.android.gms.games.unityVersion"
-            android:value="\u0030.11.01" />
+            android:value="\u0030.10.12" />
 
         <activity
             android:name="com.google.games.bridge.NativeBridgeActivity"

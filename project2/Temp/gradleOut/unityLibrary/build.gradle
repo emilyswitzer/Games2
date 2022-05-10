@@ -42,21 +42,24 @@ dependencies {
     implementation(name: 'com.google.android.gms.play-services-ads-identifier-17.0.0', ext:'aar')
     implementation(name: 'com.google.android.gms.play-services-ads-lite-20.6.0', ext:'aar')
     implementation(name: 'com.google.android.gms.play-services-appset-16.0.0', ext:'aar')
-    implementation(name: 'com.google.android.gms.play-services-base-18.0.1', ext:'aar')
-    implementation(name: 'com.google.android.gms.play-services-basement-18.0.0', ext:'aar')
+    implementation(name: 'com.google.android.gms.play-services-auth-19.0.0', ext:'aar')
+    implementation(name: 'com.google.android.gms.play-services-auth-api-phone-17.0.0', ext:'aar')
+    implementation(name: 'com.google.android.gms.play-services-auth-base-17.0.0', ext:'aar')
+    implementation(name: 'com.google.android.gms.play-services-base-17.6.0', ext:'aar')
+    implementation(name: 'com.google.android.gms.play-services-basement-17.6.0', ext:'aar')
     implementation(name: 'com.google.android.gms.play-services-drive-17.0.0', ext:'aar')
-    implementation(name: 'com.google.android.gms.play-services-games-v2-17.0.0', ext:'aar')
+    implementation(name: 'com.google.android.gms.play-services-games-21.0.0', ext:'aar')
     implementation(name: 'com.google.android.gms.play-services-measurement-base-18.0.3', ext:'aar')
     implementation(name: 'com.google.android.gms.play-services-measurement-sdk-api-18.0.3', ext:'aar')
-    implementation(name: 'com.google.android.gms.play-services-nearby-18.0.2', ext:'aar')
-    implementation(name: 'com.google.android.gms.play-services-tasks-18.0.1', ext:'aar')
+    implementation(name: 'com.google.android.gms.play-services-nearby-17.0.0', ext:'aar')
+    implementation(name: 'com.google.android.gms.play-services-tasks-17.2.1', ext:'aar')
     implementation(name: 'com.google.android.ump.user-messaging-platform-1.0.0', ext:'aar')
-    implementation(name: 'com.google.games.gpgs-plugin-support-0.11.01', ext:'aar')
+    implementation(name: 'com.google.games.gpgs-plugin-support-0.10.12', ext:'aar')
     implementation(name: 'googlemobileads-unity', ext:'aar')
     implementation(name: 'UnityAds', ext:'aar')
     implementation(name: 'UnityAdsAndroidPlugin', ext:'aar')
     implementation project('GoogleMobileAdsPlugin.androidlib')
-    implementation project('GooglePlayGamesManifest.androidlib')
+    implementation project('GooglePlayGamesManifest.plugin')
 }
 
 android {
@@ -74,8 +77,8 @@ android {
         ndk {
             abiFilters 'armeabi-v7a', 'arm64-v8a'
         }
-        versionCode 10
-        versionName '10'
+        versionCode 12
+        versionName '12'
         consumerProguardFiles 'proguard-unity.txt'
     }
 
