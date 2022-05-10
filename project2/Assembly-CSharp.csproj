@@ -768,6 +768,10 @@
       <Project>{4634DD48-51A9-85FD-DD23-BACB3C5E750E}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Google.Play.Games.Editor.csproj">
+      <Project>{CC0F9605-D79E-E6DD-6DF8-404C55FB7942}</Project>
+      <Name>Google.Play.Games.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.Editor.csproj">
       <Project>{DA368E3D-CA82-172C-17D2-AF5DAF5275A9}</Project>
       <Name>Unity.Mathematics.Editor</Name>
@@ -792,17 +796,13 @@
       <Project>{AB63FDA9-D529-7E1F-9291-3B2C9847D5C2}</Project>
       <Name>Unity.2D.Common.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
-      <Project>{181BFDC8-57B4-4372-007B-E06FD9A78026}</Project>
-      <Name>Unity.2D.SpriteShape.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Google.Play.Games.Editor.csproj">
-      <Project>{CC0F9605-D79E-E6DD-6DF8-404C55FB7942}</Project>
-      <Name>Google.Play.Games.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Google.Play.Games.csproj">
       <Project>{62B2266A-1811-98D2-9D33-35E21F745287}</Project>
       <Name>Google.Play.Games</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
+      <Project>{181BFDC8-57B4-4372-007B-E06FD9A78026}</Project>
+      <Name>Unity.2D.SpriteShape.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

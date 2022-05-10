@@ -16,11 +16,8 @@ ScriptsOnlyBuild:
     - UnityAdManager
     - UnityBanner
     - UnityInterstitialAd
-    GoogleMobileAds.Common.dll:
-    - GoogleMobileAds.Common.MobileAdsEventExecutor
     GoogleMobileAds.Editor.dll:
     - GoogleMobileAds.Editor.GoogleMobileAdsSettings
-    - GoogleMobileAds.Editor.GoogleMobileAdsSettingsEditor
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -40,9 +37,6 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-    UnityEngine.Advertisements.dll:
-    - UnityEngine.Advertisements.Placeholder
-    - UnityEngine.Advertisements.Platform.Editor.BannerPlaceholder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -72,25 +66,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1624}
     - Class: 114
-      Script: {instanceID: 2530}
+      Script: {instanceID: 2532}
     - Class: 114
-      Script: {instanceID: 3006}
+      Script: {instanceID: 3008}
     - Class: 114
-      Script: {instanceID: 3196}
+      Script: {instanceID: 3198}
     - Class: 114
-      Script: {instanceID: 3470}
+      Script: {instanceID: 3472}
     - Class: 114
-      Script: {instanceID: 3504}
+      Script: {instanceID: 3506}
     - Class: 114
-      Script: {instanceID: 3742}
+      Script: {instanceID: 3744}
     - Class: 114
-      Script: {instanceID: 3886}
+      Script: {instanceID: 3888}
     - Class: 114
-      Script: {instanceID: 4254}
+      Script: {instanceID: 4256}
     - Class: 114
-      Script: {instanceID: 5310}
+      Script: {instanceID: 5306}
     - Class: 114
-      Script: {instanceID: 5706}
+      Script: {instanceID: 5702}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -141,37 +135,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1696}
+      Script: {instanceID: 1698}
     - Class: 114
-      Script: {instanceID: 2142}
+      Script: {instanceID: 2144}
     - Class: 114
-      Script: {instanceID: 2200}
+      Script: {instanceID: 2202}
     - Class: 114
-      Script: {instanceID: 2530}
+      Script: {instanceID: 2532}
     - Class: 114
-      Script: {instanceID: 2614}
+      Script: {instanceID: 2616}
     - Class: 114
-      Script: {instanceID: 3006}
+      Script: {instanceID: 3008}
     - Class: 114
-      Script: {instanceID: 3196}
+      Script: {instanceID: 3198}
     - Class: 114
-      Script: {instanceID: 3444}
+      Script: {instanceID: 3446}
     - Class: 114
-      Script: {instanceID: 3470}
+      Script: {instanceID: 3472}
     - Class: 114
-      Script: {instanceID: 3504}
+      Script: {instanceID: 3598}
     - Class: 114
-      Script: {instanceID: 3596}
+      Script: {instanceID: 3744}
     - Class: 114
-      Script: {instanceID: 3742}
+      Script: {instanceID: 4256}
     - Class: 114
-      Script: {instanceID: 4254}
+      Script: {instanceID: 5160}
     - Class: 114
-      Script: {instanceID: 5164}
+      Script: {instanceID: 5306}
     - Class: 114
-      Script: {instanceID: 5310}
-    - Class: 114
-      Script: {instanceID: 5550}
+      Script: {instanceID: 5546}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -210,33 +202,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1624}
     - Class: 114
-      Script: {instanceID: 2530}
+      Script: {instanceID: 2532}
     - Class: 114
-      Script: {instanceID: 3006}
+      Script: {instanceID: 3008}
     - Class: 114
-      Script: {instanceID: 3056}
+      Script: {instanceID: 3058}
     - Class: 114
-      Script: {instanceID: 3196}
+      Script: {instanceID: 3198}
     - Class: 114
-      Script: {instanceID: 3318}
+      Script: {instanceID: 3320}
     - Class: 114
-      Script: {instanceID: 3470}
+      Script: {instanceID: 3472}
     - Class: 114
-      Script: {instanceID: 3504}
+      Script: {instanceID: 3506}
     - Class: 114
-      Script: {instanceID: 3742}
+      Script: {instanceID: 3744}
     - Class: 114
-      Script: {instanceID: 3886}
+      Script: {instanceID: 3888}
     - Class: 114
-      Script: {instanceID: 4254}
+      Script: {instanceID: 4256}
     - Class: 114
-      Script: {instanceID: 4776}
+      Script: {instanceID: 4774}
     - Class: 114
-      Script: {instanceID: 5310}
+      Script: {instanceID: 5306}
     - Class: 114
-      Script: {instanceID: 5550}
+      Script: {instanceID: 5546}
     - Class: 114
-      Script: {instanceID: 5800}
+      Script: {instanceID: 5796}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -943,4 +935,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/GameScene.unity
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/DeathScreen.unity
-  playerPath: C:/Users/HP/Desktop/game/project2/build6.aab
+  playerPath: C:/Users/HP/Desktop/game/project2/build11.aab

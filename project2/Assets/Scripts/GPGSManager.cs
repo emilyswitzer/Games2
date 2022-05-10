@@ -32,7 +32,7 @@ public class GPGSManager : MonoBehaviour
         {
             
             statusText.text = "Failed to authenticate";
-            desc.text = "Failed to authenticate because " + status;
+         //   desc.text = "Failed to authenticate because " + status;
         }
     }
     public void ShowLeaderboard()

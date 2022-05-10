@@ -24,7 +24,7 @@ public class UnityBanner : MonoBehaviour
         // Set the banner position:
         Advertisement.Banner.SetPosition(_bannerPosition);
         LoadBanner();
-
+        ShowBannerAd();
 
     }
 
@@ -46,7 +46,7 @@ public class UnityBanner : MonoBehaviour
     void OnBannerLoaded()
     {
         Debug.Log("Banner loaded");
-        ShowBannerAd();
+      //  ShowBannerAd();
 
     }
 
@@ -80,7 +80,7 @@ public class UnityBanner : MonoBehaviour
     }
 
     void OnBannerClicked() {
-        HideBannerAd();
+       // HideBannerAd();
     }
     void OnBannerShown() { }
     void OnBannerHidden() { }
