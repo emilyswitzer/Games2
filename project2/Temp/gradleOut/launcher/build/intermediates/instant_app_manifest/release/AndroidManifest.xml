@@ -4,8 +4,8 @@
     package="com.Boxjump.Boxjump2"
     android:installLocation="preferExternal"
     android:targetSandboxVersion="2"
-    android:versionCode="12"
-    android:versionName="12" >
+    android:versionCode="19"
+    android:versionName="19" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -101,7 +101,7 @@
             android:value="portrait|landscape" />
         <meta-data
             android:name="unity.build-id"
-            android:value="b01ed60b-fe57-44bd-a894-41a91d34ac64" />
+            android:value="2f154466-1e4e-4be2-974c-651e59da3c5e" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"

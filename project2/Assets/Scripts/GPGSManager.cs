@@ -24,7 +24,7 @@ public class GPGSManager : MonoBehaviour
         PlayGamesPlatform.InitializeInstance(config);
         PlayGamesPlatform.DebugLogEnabled = true;
         PlayGamesPlatform.Activate();
-
+        PlayGamesPlatform.Instance.Authenticate(loginCallback, true);
         m_SignIn.onClick.RemoveAllListeners();
 
         m_SignIn.onClick.AddListener(SignInGooglePlayGames);
@@ -33,7 +33,21 @@ public class GPGSManager : MonoBehaviour
     }
 
 
-
+    public void LoginToPlayGames()
+    {
+        PlayGamesPlatform.Instance.Authenticate(loginCallback, false);
+    }
+    public void loginCallback(Boolean success)
+    {
+        if (success)
+        {
+            Debug.Log("signed in");
+        }
+        else
+        {
+            Debug.Log("Sign in error");
+        }
+    }
     public void SignInGooglePlayGames()
     {
         string playerName = string.Empty;

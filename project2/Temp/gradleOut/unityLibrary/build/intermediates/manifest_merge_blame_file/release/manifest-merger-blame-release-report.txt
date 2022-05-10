@@ -3,8 +3,8 @@
 3<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 4    xmlns:tools="http://schemas.android.com/tools"
 5    package="com.unity3d.player"
-6    android:versionCode="12"
-7    android:versionName="12" >
+6    android:versionCode="19"
+7    android:versionName="19" >
 8
 9    <uses-sdk
 10        android:minSdkVersion="19"
@@ -113,7 +113,7 @@
 63-->C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:17:5-101
 64            android:name="unity.build-id"
 64-->C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:17:16-45
-65            android:value="b01ed60b-fe57-44bd-a894-41a91d34ac64" />
+65            android:value="2f154466-1e4e-4be2-974c-651e59da3c5e" />
 65-->C:\Users\HP\Desktop\game\project2\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:17:46-98
 66    </application>
 67

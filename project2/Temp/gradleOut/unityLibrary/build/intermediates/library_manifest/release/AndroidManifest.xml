@@ -3,8 +3,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.unity3d.player"
-    android:versionCode="12"
-    android:versionName="12" >
+    android:versionCode="19"
+    android:versionName="19" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -62,7 +62,7 @@
             android:value="portrait|landscape" />
         <meta-data
             android:name="unity.build-id"
-            android:value="b01ed60b-fe57-44bd-a894-41a91d34ac64" />
+            android:value="2f154466-1e4e-4be2-974c-651e59da3c5e" />
     </application>
 
 </manifest>
